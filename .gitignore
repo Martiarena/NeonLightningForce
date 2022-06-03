@@ -1,0 +1,8 @@
+*.ico
+*.jpg
+*.png
+.DS_Store
+*.gif
+*.log
+*.txt
+*.ttf

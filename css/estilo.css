@@ -1,0 +1,1191 @@
+/* CSS Document */
+*{
+	-webkit-transform: all 0.2s ease-out;
+	-moz-transform: all 0.2s ease-out;
+	-ms-transform: all 0.2s ease-out;
+	-o-transform: all 0.2s ease-out;
+}
+
+@font-face {
+    font-family: Arcade;
+    src: url(../fonts/prstartk_0.ttf);
+}
+
+
+header,nav,section,article,aside,footer,figure{
+	display:block;
+}
+
+body, html {
+  height: 100%;
+}
+
+html {
+	height:100%;
+}
+
+body{
+	padding:0px;
+	margin:0px;
+	background:#001039 url(../img/ciudad-beat-em-up-openbor-indie-game.gif) bottom center no-repeat;
+	color:#FFFFFF;
+	font-size:13px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.clouds{
+	background:url(../img/cielo-beat-em-up-openbor-indie-game.gif) top center no-repeat;
+}
+
+.luna{
+	background:url(../img/luna-beat-em-up-openbor-indie-game.gif) 80% top no-repeat;
+}
+
+header {
+    display: block;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+.btn-descargar {
+	background: url(../img/btn-descargar-beat-em-up-openbor-indie-game.gif) center no-repeat;
+    width: 400px;
+    height: 74px;
+    display: block;
+    background-size: contain;
+    position: absolute;
+    top: 565px;
+    right: 25px;
+    z-index: 9;
+}
+
+.btn-download {
+	background: url(../img/btn-download-beat-em-up-openbor-indie-game.gif) center no-repeat;
+    width: 400px;
+    height: 74px;
+    display: block;
+    background-size: contain;
+    position: absolute;
+    top: 565px;
+    right: 25px;
+    z-index: 9;
+}
+
+.btn-descargar.no{
+	background: url(../img/btn-descargar-no-beat-em-up-openbor-indie-game.gif) center no-repeat;
+}
+
+.logo{
+	display:inline-block;
+}
+
+ul{
+	margin:0px;
+	padding:0px;
+}
+
+ul li{
+	list-style:none;
+
+}
+
+a{
+	text-decoration:none;
+	color:#FFFFFF;
+	font-weight:bold;
+}
+
+a img{
+	border:none;
+}
+
+.cl{
+	clear:both;
+}
+
+.izq{
+	float:left;
+}
+
+.der{
+	float:right;
+}
+
+h1, h2, h3, h4, h5, h6{
+	color:#FFFFFF;
+}
+
+h2{
+	font-family: Arcade;
+	margin-top:5px;
+	font-size:24px;
+	margin-bottom:10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.border-text, .border-text-interior{
+	background: #000;
+    border-style: solid;
+    border-width: 14px;
+    -moz-border-image: url(../img/border-fc-beat-em-up-openbor-indie-game.png) 7;
+    -webkit-border-image: url(../img/border-fc-beat-em-up-openbor-indie-game.png) 7;
+    -o-border-image: url(../img/border-fc-beat-em-up-openbor-indie-game.png) 7;
+    border-image: url(../img/border-fc-beat-em-up-openbor-indie-game.png) 7;
+    position: relative;
+    z-index: 0;
+    padding: 10px;
+}
+
+.border-text-interior{
+    -moz-border-image: url(../img/border-fc1-beat-em-up-openbor-indie-game.png) 7;
+    -webkit-border-image: url(../img/border-fc1-beat-em-up-openbor-indie-game.png) 7;
+    -o-border-image: url(../img/border-fc1-beat-em-up-openbor-indie-game.png) 7;
+    border-image: url(../img/border-fc1-beat-em-up-openbor-indie-game.png) 7;
+}
+
+.text-box{
+	background: url(../img/nav-fondo-beat-em-up-openbor-indie-game.png);
+}
+
+.menu-principal{
+	padding: 0px;
+	text-align:center;
+}
+
+.menu-principal ul li{
+	display: inline-block;
+	width:auto;
+    font-family: Arcade;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.menu-principal ul li a{
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+	line-height:22px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.menu-principal li:last-child a{
+	margin-right:0px;
+}
+
+.menu-principal li.selected a{
+	color:#FFE100;
+}
+
+.menu-principal li a:hover{
+	color:#FFE100;
+}
+
+#contenedor{
+	width:960px;
+	margin:auto;
+	position:relative;
+}
+
+.contenido {
+    position: relative;
+    height: 350px;
+    top: -250px;
+}
+
+.text-container {
+    padding: 10px;
+    text-align: justify;
+    font-size: 10px;
+    height: 375px;
+    line-height: 21px;
+    display: block;
+    float: none;
+    font-family: arcade;
+    text-transform: uppercase;
+    width: 720px;
+    margin: auto;
+    background: url(../img/fondo-int-beat-em-up-openbor-indie-game.gif) center no-repeat;
+}
+
+.text-back, .text-back.story {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-left: 2%;
+    background: rgba(0, 0, 0, 0.5);
+    padding-right: 2%;
+    padding-top: 1%;
+}
+
+.text-back.story{
+    width: 78%;
+}
+
+.fluid_container {
+	margin:0px;
+	padding:0px;
+	width: 100%;
+}
+
+.novedades {
+    position: relative;
+	width:280px;
+    border-style: solid;
+    border-width: 2px;
+	padding:2px;
+    background-color: #521029;
+    border-bottom: 0px none;
+	padding-bottom:0px;
+	margin-left: 20px;
+}
+
+.titulo-novedad {
+    background: #947b00;
+    margin: 0px;
+    border: outset 2px #d6b500;
+    position: absolute;
+    z-index: 11;
+    top: -12px;
+    left: 28px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 1px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.trailer{
+	float: right;
+    top: 267px;
+    position: relative;
+	width:450px;
+	height:256px;
+	display:block;
+	background:url(../img/video-beat-em-up-openbor-indie-game.png) no-repeat top left;
+}
+.trailer:hover{
+	background:url(../img/video-beat-em-up-openbor-indie-game.png) right top no-repeat;
+}
+
+.trailer-e{
+	float: right;
+    top: 267px;
+    position: relative;
+	width:450px;
+	height:256px;
+	display:block;
+	background:url(../img/video-e-beat-em-up-openbor-indie-game.png) no-repeat top left;
+}
+.trailer-e:hover{
+	background:url(../img/video-e-beat-em-up-openbor-indie-game.png) right top no-repeat;
+}
+.scrollbar{
+	height: 68px;
+	width: 100%;
+	background:#000;
+	overflow-y: scroll;
+}
+#style-2::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 4px;
+}
+
+#style-2::-webkit-scrollbar{
+	width: 8px;
+	background-color: #666;
+}
+
+#style-2::-webkit-scrollbar-thumb{
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #F5F5F5;
+}
+
+.novedades ul{
+	padding-left:10px;
+	padding-right: 10px;
+}
+
+.novedades ul li{
+	display:block;
+	border-bottom:1px dashed #ccc;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+.novedades ul li:last-child{
+	border-bottom:0px none;
+}
+
+.personajes {
+    background: url(../img/trio-beat-em-up-openbor-indie-game.gif) left bottom no-repeat;
+    width: 100%;
+    height: 627px;
+    position: absolute;
+    top: 45px;
+}
+
+.black{
+	background: url(../img/trio-b-beat-em-up-openbor-indie-game.gif) left bottom no-repeat;
+}
+
+#isolda {
+    position: absolute;
+    top: 294px;
+    left: 275px;
+    background: url(../img/isolda-beat-em-up-openbor-indie-game.png) center top no-repeat;
+    width: 254px;
+    height: 378px;
+    display: block;
+}
+
+#steven {
+    position: absolute;
+    top: 264px;
+    background: url(../img/steven-beat-em-up-openbor-indie-game.png) center top no-repeat;
+    width: 398px;
+    height: 336px;
+    display: block;
+}
+
+#negishi {
+    position: absolute;
+    top: 45px;
+    background: url(../img/negishi-beat-em-up-openbor-indie-game.png) center top no-repeat;
+    width: 524px;
+    height: 422px;
+    display: block;
+}
+
+.text-characters {
+    float: left;
+    width: 70px;
+}
+
+.tab-current .charam, .tab-current .charas {
+    border: 2px solid #FF0;
+}
+
+.tab-current .charam:hover, .tab-current .charas:hover {
+    border: 2px solid #FF0;
+}
+
+.charam{
+	border:2px solid #FFF;
+	width:44px;
+	height:44px;
+	display:inline-block;
+}
+
+.charas{
+	border:2px solid #FFF;
+	width:26px;
+	height:26px;
+	display:inline-block;
+}
+
+.second-list li{
+	display:inline-block;
+}
+
+.pisolda{
+	background:url(../img/pisolda-beat-em-up-openbor-indie-game.png) no-repeat center;
+}
+
+.psteven{
+	background:url(../img/psteven-beat-em-up-openbor-indie-game.png) no-repeat center;
+}
+
+.pnegishi{
+	background:url(../img/pnegishi-beat-em-up-openbor-indie-game.png) no-repeat center;
+}
+
+.pmelania{
+	background:url(../img/pmelania-beat-em-up-openbor-indie-game.png) no-repeat center;
+}
+
+.patlas{
+	background:url(../img/patlas-beat-em-up-openbor-indie-game.png) no-repeat center;
+}
+
+.pthundervolt{
+	background:url(../img/pthundervolt-beat-em-up-openbor-indie-game.png) no-repeat center;
+}
+
+.pmikhail{
+	background:url(../img/pmikhail-beat-em-up-openbor-indie-game.png) no-repeat center;
+}
+
+.ppolices{
+	background:url(../img/ppolices-beat-em-up-openbor-indie-game.png) no-repeat center;
+}
+
+.pvixor{
+	background:url(../img/pvixor-beat-em-up-openbor-indie-game.png) no-repeat center;
+}
+
+.top-cont{
+	top: 230px;
+	position:relative;
+	overflow:hidden;
+	width:100%;
+}
+
+.info-characters{
+    width: 580px;
+    font-size: 15px;
+    height: 350px;
+    line-height: 22px;
+    float: right;
+}
+
+.info-characters p{
+	text-align:left;
+	font-size: 10px;
+}
+
+.info-characters span{
+	display:block;
+	text-align:justify;
+	font-size: 12px;
+}
+
+.info-characters .secondary span{
+	display:block;
+	text-align:left;
+	font-size: 12px;
+}
+
+.col{
+	width: 49%;
+	text-align: justify;
+}
+
+.der{
+	float: right;
+}
+
+.izq{
+    float: left;
+}
+
+.col6{
+	width:60%;
+	float:right;
+}
+
+.name-character {
+    font-size: 22px;
+    margin-top: 0px;
+	margin-bottom:10px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.name-isolda{
+	color:#00a0b4;
+	background:#00a0b4;
+	background: -webkit-linear-gradient(top, #00a0b4, #00dce6, #00a0b4);
+	background: linear-gradient(top, #00a0b4, #00dce6, #00a0b4);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.name-steven{
+	color:#c64200;
+	background:#c64200;
+	background: -webkit-linear-gradient(top, #c64200, #ffff00, #c64200);
+	background: linear-gradient(top, #c64200, #ffff00, #c64200);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.name-negishi{
+	color:#8c9650;
+	background:#8c9650;
+	background: -webkit-linear-gradient(top, #8c9650, #c8dc8c, #8c9650);
+	background: linear-gradient(top, #8c9650, #c8dc8c, #8c9650);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.name-melania{
+	color:#b9255b;
+	background:#b9255b;
+	background: -webkit-linear-gradient(top, #b9255b, #eda6d0, #b9255b);
+	background: linear-gradient(top, #b9255b, #eda6d0, #b9255b);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.name-atlas{
+	color:#395a4e;
+	background:#395a4e;
+	background: -webkit-linear-gradient(top, #395a4e, #adc9c4, #395a4e);
+	background: linear-gradient(top, #395a4e, #adc9c4, #395a4e);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.name-mikhail{
+	color:#9c9c9c;
+	background:#9c9c9c;
+	background: -webkit-linear-gradient(top, #9c9c9c, #dedede, #9c9c9c);
+	background: linear-gradient(top, #9c9c9c, #dedede, #9c9c9c);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.name-police{
+	color:#3d4bc2;
+	background:#3d4bc2;
+	background: -webkit-linear-gradient(top, #3d4bc2, #a0bcfc, #3d4bc2);
+	background: linear-gradient(top, #3d4bc2, #a0bcfc, #3d4bc2);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.name-thundervolt{
+	color:#ac902d;
+	background:#ac902d;
+	background: -webkit-linear-gradient(top, #ac902d, #feee99, #ac902d);
+	background: linear-gradient(top, #ac902d, #feee99, #ac902d);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.name-vixor{
+	color:#62628B;
+	background:#62628B;
+	background: -webkit-linear-gradient(top, #62628B, #C7C7F8, #62628B);
+	background: linear-gradient(top, #62628B, #C7C7F8, #62628B);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.isolda-sprite{
+	background:url(../img/isolda-sprite-beat-em-up-openbor-indie-game.gif) right bottom no-repeat;
+}
+
+.steven-sprite{
+	background:url(../img/steven-sprite-beat-em-up-openbor-indie-game.gif) right bottom no-repeat;
+}
+
+.negishi-sprite{
+	background:url(../img/negishi-sprite-beat-em-up-openbor-indie-game.gif) right bottom no-repeat;
+
+}
+
+.melania-sprite {
+    background: url(../img/melania-sprite-beat-em-up-openbor-indie-game.png) 85% bottom no-repeat;
+}
+
+.mikhail-sprite {
+    background: url(../img/mikhail-sprite-beat-em-up-openbor-indie-game.png) 80% bottom no-repeat;
+}
+
+.atlas-sprite {
+    background: url(../img/atlas-sprite-beat-em-up-openbor-indie-game.png) 92% bottom no-repeat;
+}
+
+.thundervolt-sprite {
+    background: url(../img/thundervolt-sprite-beat-em-up-openbor-indie-game.png) 90% 80px no-repeat;
+}
+
+.vixor-sprite {
+    background: url(../img/vixor-sprite-beat-em-up-openbor-indie-game.png) 90% bottom no-repeat;
+}
+
+.police-sprite {
+    background: url(../img/police-sprite-beat-em-up-openbor-indie-game.png) 93% bottom no-repeat;
+}
+
+.sprite-content{
+	width:100%;
+	height: 287px;
+}
+
+ul.lista-tipos li {
+    margin-bottom: 10px;
+}
+
+.menu-principal a#mmovil{
+	display:none;
+}
+
+.firma{
+	margin-top:10px;
+	margin-bottom:0px;
+	text-align:center;
+}
+
+.respo-firma{
+	display:none;
+}
+
+.col-desc{
+	width:55%;
+}
+
+.titular{
+	margin-bottom:10px;
+}
+
+ul.tips li {
+    list-style: square;
+    margin-left: 5px;
+    text-align: left;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+ul.tips {
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+
+.lista-galeria, .lista-videos{
+	display:block;
+}
+
+.lista-videos  span{
+    font-size: 19px;
+    display: block;
+    margin-top: 25px;
+    text-align: center;
+}
+	
+.lista-galeria li, .lista-videos  li{
+	display:block;
+	width:18%;
+	float: left;
+    margin-left: 1%;
+    margin-right: 1%;
+	margin-bottom: 10px;
+}
+	
+.lista-galeria li img, .lista-videos  li img {
+    width: 100%;
+    border: 2px solid #fff;
+}
+
+.lista-galeria li:hover img, .lista-videos li:hover img {
+    border: 2px solid #ff0;
+}
+
+.text-arcade {
+    font-family: arcade;
+	text-transform:uppercase;
+}
+
+.text-languaje {
+    float: right;
+    top: 267px;
+    position: relative;
+    width: 450px;
+    height: 256px;
+    display: block;
+}
+
+.minus{
+	text-transform:none;
+	text-decoration:none;
+}
+
+.box-lang {
+    display: inline-block;
+    width: 46%;
+    float: left;
+}
+
+
+.box-lang img{
+    width: 100%;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.button-download {
+    background: #9f36ea;
+    display: inline-block;
+    color: #ffe100;
+    padding: 10px 20px 10px 20px;
+    border: 3px solid #ca91f4;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.button-download:hover, .button-download:focus {
+    background: #b960f4;
+    display: inline-block;
+    color: #faf17c;
+    padding: 10px 20px 10px 20px;
+    border: 3px solid #ca91f4;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+h4.version {
+    font-family: arcade;
+    padding-top: 20px;
+    text-transform: uppercase;
+    margin-top: 0px;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.texto-nota{
+	font-size: 12px;
+	font-style: italic;
+	margin-bottom: 0px;
+	padding-bottom: 10px;
+}
+
+@media only screen and (max-width:991px){
+	html´{
+		height:auto;
+	}
+	body{
+		background:#001039;
+	}
+	.responsive-back{
+		background:#001039 url(../img/ciudad-beat-em-up-openbor-indie-game.gif) bottom center no-repeat;
+	}
+	.firma{
+		display:none;
+	}
+	#contenedor {
+		width: 100%;
+	}
+	.contenido {
+		height: auto;
+		top: 0;
+	}
+	.btn-descargar {
+		background: url(../img/btn-descargar-beat-em-up-openbor-indie-game.gif) center no-repeat;
+		width: 400px;
+		height: 74px;
+		display: block;
+		position: relative;
+		margin: auto;
+		top: -60px;
+		margin-top: 0px;
+		right:0px;
+		z-index: 0;
+		float: none;
+	}
+	.btn-download {
+		background: url(../img/btn-download-beat-em-up-openbor-indie-game.gif) center no-repeat;
+		width: 400px;
+		height: 74px;
+		display: block;
+		position: relative;
+		margin: auto;
+		top: -60px;
+		margin-top: 0px;
+		right:0px;
+		z-index: 0;
+		float: none;
+	}
+	.btn-descargar.no {
+		width: 400px;
+		height: 74px;
+		display: block;
+		position: relative;
+		margin: auto;
+		top: -60px;
+		margin-top: 0px;
+		right:0px;
+		z-index: 0;
+		float: none;
+	}
+	.respo-menu-fixed{
+		position: fixed;
+		display: block;
+		z-index: 99;
+		bottom: 0px;
+		width: 100%;
+	}
+	.menu-principal {
+		height: auto;
+		text-align: center;
+		width: 100%;
+		margin: auto;
+		display: block;
+		bottom: 0px;
+		z-index: 99;
+		border-left: 0px;
+		border-right: 0px;
+	}
+	.menu-principal ul li {
+		display: inline-block;
+		float: none;
+		font-family: Arcade;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	    padding-left: 10px;
+	    padding-right: 10px;
+	}
+	.menu-principal ul li a {
+		width: auto;
+		margin-right: 0px;
+		font-size: 15px;
+	}
+	.trailer {
+		float: none;
+		top: -90px;
+		position: relative;
+		display: block;
+		margin: auto;
+	}
+	.trailer-e {
+		float: none;
+		top: -90px;
+		position: relative;
+		display: block;
+		margin: auto;
+	}
+	.personajes {
+		background: url(../img/trio-beat-em-up-openbor-indie-game.gif) center top no-repeat;
+		width: 100%;
+		height: 555px;
+		position: relative;
+		top: -60px;
+	}
+	.titulo-novedad {
+		position: relative;
+		z-index: 11;
+		top: 12px;
+		left: 0px;
+		margin: auto;
+		width: 110px;
+		text-align: center;
+	}
+	.novedades {
+		position: relative;
+		width: 280px;
+		border-style: solid;
+		border-width: 2px;
+		padding: 2px;
+		background-color: #521029;
+		border-bottom: 2px solid #fff;
+		padding-bottom: 68px;
+		margin-bottom: 0px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	nav {
+		top: -35px;
+		position: relative;
+	}
+	.respo-firma {
+		margin-top: 0px;
+		display: block;
+		text-align: center;
+		margin-bottom: 0px;
+		background: #000;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	.top-cont {
+		top: 0px;
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+	}
+	.text-story {
+		width: 100%;
+		margin: auto;
+		text-align: center;
+		margin-bottom: 0px;
+	}
+	.text-container {
+		padding: 10px;
+		text-align: justify;
+		font-size: 10px;
+		height: auto;
+		line-height: 22px;
+		display: block;
+		float: none;
+		font-family: arcade;
+		text-transform: uppercase;
+		width: 720px;
+		margin: auto;
+		background: url(../img/fondo-int-beat-em-up-openbor-indie-game.gif) center no-repeat;
+	}
+	.text-languaje {
+	    float: none;
+	    top: 0px;
+	    position: relative;
+	    width: 70%;
+	    height: 340px;
+	    display: block;
+	    margin-top: 40px;
+	    margin-left: 15%;
+    	margin-right: 15%;
+	}
+	.responsive-hidden{
+		display:none !important;
+	}
+	.info-characters .secondary span {
+    	text-align: center;
+	}
+}
+@media only screen and (max-width:768px){
+	.personajes {
+		background: url(../img/trio-beat-em-up-openbor-indie-game.gif) center 117% no-repeat;
+		width: 95%;
+		height: 470px;
+		position: relative;
+		top: -20px;
+		margin: auto;
+		background-size: contain;
+	}
+	.menu-principal a#mmovil {
+		display: block;
+		font-size: 16px;
+		font-family: arcade;
+		text-transform: uppercase;
+		padding-top: 18px;
+		padding-bottom: 18px;
+		background: #0000B9;
+		line-height: 16px;
+	}
+	.menu-principal {
+		height: auto;
+		text-align: center;
+		margin: auto;
+		display: block;
+		bottom: 0px;
+		z-index: 99;
+		border-left: 0px;
+		border-right: 0px;
+	}
+	.menu-principal ul{
+		display:none;
+		height:auto;
+	}
+	.menu-principal ul li {
+	    width: 100%;
+	    padding-left: 0px;
+	    padding-right: 0px;
+	}
+	.btn-descargar {
+		background: url(../img/btn-descargar-beat-em-up-openbor-indie-game.gif) center no-repeat;
+		width: 100%;
+		background-size: contain;
+	    max-width: 400px;
+	}
+	.btn-download {
+		background: url(../img/btn-download-beat-em-up-openbor-indie-game.gif) center no-repeat;
+		width: 100%;
+		background-size: contain;
+	    max-width: 400px;
+	}
+	.btn-descargar.no{
+		background: url(../img/btn-descargar-no-beat-em-up-openbor-indie-game.gif) center no-repeat;
+		width: 100%;
+		background-size: contain;
+	    max-width: 400px;
+	}
+	.logo img {
+		border: none;
+		width: 100%;
+	}
+	.trailer {
+		width: 338px;
+		height: 192px;
+		background-size: cover;
+	}
+	.trailer:hover {
+		width: 338px;
+		height: 192px;
+		background-size: cover;
+	}
+	.trailer-e {
+		width: 338px;
+		height: 192px;
+		background-size: cover;
+	}
+	.trailer-e:hover {
+		width: 338px;
+		height: 192px;
+		background-size: cover;
+	}
+	.novedades {
+    	position: relative;
+	    width: 100%;
+		max-width:280px;
+	}
+	.text-container {
+		width: 80%;
+		margin: auto;
+		background: #000;
+	}
+	.text-back, .text-back.story {
+		background: none;
+	}
+	.info-characters {
+		width: 100%;
+		font-size: 15px;
+		height: auto;
+		line-height: 22px;
+		float: right;
+	}
+	.col-desc {
+		width: 100%;
+	}
+	ul.tips li {
+		text-align: justify;
+	}
+	.lista-galeria li{
+		width:48%;
+		margin-left: 1%;
+		margin-right: 1%;
+	}
+	.lista-videos li{
+		width:18%;
+		margin-left: 1%;
+		margin-right: 1%;
+	}
+	.lista-videos li:first-child{
+		width:100%;
+	}
+	.lista-videos li{
+		width:48%;
+		margin-left: 1%;
+		margin-right: 1%;
+	}
+	.lista-videos span {
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	.isolda-sprite {
+		background: url(../img/isolda-sprite-beat-em-up-openbor-indie-game.gif) center top no-repeat;
+	}
+	.steven-sprite {
+		background: url(../img/steven-sprite-beat-em-up-openbor-indie-game.gif) center top no-repeat;
+	}
+	.negishi-sprite {
+		background: url(../img/negishi-sprite-beat-em-up-openbor-indie-game.gif) right top no-repeat;
+	}
+	.melania-sprite {
+		background: url(../img/melania-sprite-beat-em-up-openbor-indie-game.png) center 45px no-repeat;
+	}
+	.atlas-sprite {
+		background: url(../img/atlas-sprite-beat-em-up-openbor-indie-game.png) center 45px no-repeat;
+	}
+	.thundervolt-sprite {
+		background: url(../img/thundervolt-sprite-beat-em-up-openbor-indie-game.png) center 35px no-repeat;
+	}
+	.mikhail-sprite {
+		background: url(../img/mikhail-sprite-beat-em-up-openbor-indie-game.png) center 45px no-repeat;
+	}
+	.vixor-sprite {
+		background: url(../img/vixor-sprite-beat-em-up-openbor-indie-game.png) center 45px no-repeat;
+	}
+	.police-sprite {
+		background: url(../img/police-sprite-beat-em-up-openbor-indie-game.png) center 45px no-repeat;
+	}
+	.content-wrap section {
+		padding: 0em;
+	}
+	.name-isolda, .name-melania, .name-mikhail{
+		margin-bottom: 240px;
+	}
+	.name-steven{
+		margin-bottom: 260px;
+	}
+	.name-negishi{
+		margin-bottom: 280px;
+	}
+	.name-atlas{
+		margin-bottom: 270px;
+	}
+	.name-thundervolt {
+    	margin-bottom: 180px;
+	}
+	.name-police{
+		margin-bottom: 230px;
+	}
+	.name-vixor{
+		margin-bottom: 260px;
+	}
+	.name-character {
+		text-align: center;
+	}
+	.text-characters {
+		float: none;
+		width: 100%;
+	}
+	.text-characters nav {
+		top: 0px;
+	}
+	.sprite-content {
+	    height: auto;
+	}
+	.tabs nav ul li {
+    	display: inline-block;
+	}
+	
+}
+@media only screen and (max-width:480px){
+	.personajes {
+		background: url(../img/trio-beat-em-up-openbor-indie-game.gif) center 117% no-repeat;
+		width: 95%;
+		height: 325px;
+		position: relative;
+		top: -47px;
+		margin: auto;
+		background-size: contain;
+	}
+	.logo {
+		width: 90%;
+    	margin-top: 10px;
+	}
+	.trailer {
+		width: 276px;
+		height: 157px;
+		background-size: cover;
+	}
+	.trailer:hover {
+		width: 276px;
+		height: 157px;
+		background-size: cover;
+	}
+	.trailer-e {
+		width: 276px;
+		height: 157px;
+		background-size: cover;
+	}
+	.trailer-e:hover {
+		width: 276px;
+		height: 157px;
+		background-size: cover;
+	}
+	.btn-descargar {
+		width: 80%;
+	}
+	.btn-download {
+		width: 80%;
+	}
+	.btn-descargar.no{
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width:380px){
+	.novedades {
+		margin-bottom: 34px;
+	}
+}
