@@ -4,28 +4,47 @@
 <?php include("includes/head.php"); ?>
 </head>
 <body>
+	<div id="inline1" style="display: none; text-align:center;">
+		<div class="clouds" style="width:340px;">
+			<?php if ($cod_idioma==1){?>
+			<h4 class="version">Choose version</h4>
+			<a href="http://adf.ly/3029188/nlf-game" class="button-download" target="_blank">Original (PC)</a><br>
+			<a href="http://q.gs/3029188/nlf-game-mobile" class="button-download" target="_blank">.Pak file (Android)</a>
+			<?php }else{ ?>
+			<h4 class="version">Elija la versi&oacute;n</h4>
+			<a href="http://adf.ly/3029188/nlf-juego" class="button-download" target="_blank">Original (PC)</a><br>
+			<a href="http://q.gs/3029188/nlf-juego-mobil" class="button-download" target="_blank">Archivo .Pak (Android)</a>
+			<?php } ?>
+		</div>
+	</div>
 	<div class="responsive-back">
 		<div class="clouds">
 			<div class="luna">
-				<?php include("includes/header.php"); ?>
-				<section>
+				<div class="body-website">
+					<div id="contenedor">
+						<header>
+							<div class="logo">
+								<div class="languaje-icons">
+									<a href="index.php"><img class="flag" src="img/spain-beat-em-up-openbor-indie-game.png" alt="Idioma en Espa&ntilde;ol"></a> <a href="index.php?cod_idioma=1"><img class="flag" src="img/english-beat-em-up-openbor-indie-game.png" alt="English Languaje"></a>
+								</div>
+								<?php include("includes/header.php"); ?>
+							</div>
+						</header>
+					</div>
 					<div id="contenedor">
 						<div class="contenido">
-							<div class="personajes black responsive-hidden"></div>
-							<div class="text-arcade text-languaje text-center">
-								<p>Idioma / Languaje</p>
-	                        	<div class="box-lang" style="border-right: 2px solid #FFF; padding-right: 3%; margin-right: 3%;">
-	                        		<a href="home.php?cod_idioma=0"><img src="img/spain-beat-em-up-openbor-indie-game.png" /></a>
-	                       		</div>
-	                       		<div class="box-lang">
-		                       		<a href="home.php?cod_idioma=1"><img src="img/english-beat-em-up-openbor-indie-game.png" /></a>
-	                       		</div>
-	                       	</div>
-	                        <div class="cl"></div>
+							<div class="personajes">
+								<?php $menu = "index"; include("includes/news.php"); ?>
+							</div>
+							<div class="medios-descarga">
+								<?php if ($cod_idioma==1){?><a class="trailer-e fancybox-media" rel="mediagallery" href="https://youtu.be/nHBa5KBhNx4"></a><?php }else{ ?><a class="trailer fancybox-media" rel="mediagallery" href="https://youtu.be/nHBa5KBhNx4"></a><?php } ?>
+								<?php if ($cod_idioma==1){?><a class="btn-download fancybox" href="#inline1"></a><?php }else{ ?><a class="btn-descargar fancybox" href="#inline1"></a><?php } ?>
+							</div>
 						</div>
+						<?php $menu = "index"; include("includes/menu.php"); ?>
+						<?php include("includes/footer.php"); ?>
 					</div>
-				</section>
-				<?php $menu = "home"; include("includes/footer.php"); ?>
+				</div>
 			</div>
 		</div>
 	</div>
