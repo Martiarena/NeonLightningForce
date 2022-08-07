@@ -76,9 +76,9 @@ if (isset($_REQUEST['cod_idioma'])) {
 	});
 </script>
 <style type="text/css">
-.fancybox-type-iframe.fancybox-opened .fancybox-skin {
+.fancybox-type-iframe.fancybox-opened .fancybox-skin, .fancybox-type-inline.fancybox-opened .fancybox-skin, .fancybox-type-image.fancybox-opened .fancybox-skin{
 	border-style: solid;
-	border-width: 14px;
+	border-width: 8px;
 	-moz-border-image: url(img/border-fc-beat-em-up-openbor-indie-game.png) 7;
 	-webkit-border-image: url(img/border-fc-beat-em-up-openbor-indie-game.png) 7;
     -o-border-image: url(img/border-fc-beat-em-up-openbor-indie-game.png) 7;
