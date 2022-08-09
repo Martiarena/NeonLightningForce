@@ -34,11 +34,14 @@
 					<div id="contenedor">
 						<div class="contenido">
 							<div class="personajes">
-								<?php $menu = "index"; include("includes/news.php"); ?>
+								<nav class="desktop-menu"><?php $menu = "index"; include("includes/news.php"); ?></nav>
 							</div>
 							<div class="medios-descarga">
-								<?php if ($cod_idioma==1){?><a class="trailer-e fancybox-media" rel="mediagallery" href="https://youtu.be/nHBa5KBhNx4"></a><?php }else{ ?><a class="trailer fancybox-media" rel="mediagallery" href="https://youtu.be/nHBa5KBhNx4"></a><?php } ?>
+								<div class="trailer-box">
+									<?php if ($cod_idioma==1){?><a class="trailer-e fancybox-media" rel="mediagallery" href="https://youtu.be/nHBa5KBhNx4"></a><?php }else{ ?><a class="trailer fancybox-media" rel="mediagallery" href="https://youtu.be/nHBa5KBhNx4"></a><?php } ?>
+								</div>
 								<?php if ($cod_idioma==1){?><a class="btn-download fancybox" href="#inline1"></a><?php }else{ ?><a class="btn-descargar fancybox" href="#inline1"></a><?php } ?>
+								<nav class="mobile-menu"><?php $menu = "index"; include("includes/news.php"); ?></nav>
 							</div>
 						</div>
 						<?php $menu = "index"; include("includes/menu.php"); ?>

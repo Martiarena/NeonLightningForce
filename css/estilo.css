@@ -27,10 +27,15 @@ html {
 body{
 	padding:0px;
 	margin:0px;
-	background:#001039 url(../img/ciudad-beat-em-up-openbor-indie-game.gif) bottom center no-repeat;
 	color:#FFFFFF;
+	background-color: #001039;
 	font-size:13px;
 	font-family:Arial, Helvetica, sans-serif;
+	height: 100%;
+}
+
+.responsive-back{
+	background: url(../img/ciudad-beat-em-up-openbor-indie-game.gif) bottom center no-repeat;
 	height: 100%;
 }
 
@@ -95,6 +100,7 @@ header {
 .logo img.neon-lightning-force {
     max-width: 400px;
     margin-top: 10px;
+	width: 100%;
 }
 
 .languaje-icons {
@@ -106,10 +112,6 @@ header {
 
 .flag {
     width: 30px;
-}
-
-.responsive-back {
-	height: 100%;
 }
 
 ul{
@@ -231,8 +233,6 @@ h2{
 	height: 527px;
 	display: flex;
 	justify-content: space-between;
-
-	/* top: -250px; */
 }
 
 .medios-descarga {
@@ -818,7 +818,30 @@ footer p {
 	margin-bottom: 0;
 }
 
+.mobile-menu {
+	display: none;
+}
+.responsive-back {
+	min-height: 620px;
+}
+
 @media only screen and (max-width:991px){
+	.desktop-menu{
+		display: none;
+	}
+	.mobile-menu {
+		display: block;
+		margin-top: 2rem;
+	}
+	.medios-descarga {
+		padding-bottom: 64px;
+	}
+	.responsive-back {
+		min-height: 850px;
+	}
+	.trailer-box {
+		position: relative;
+	}
 	html {
 		height:100%;
 	}
@@ -827,6 +850,15 @@ footer p {
 	}
 	.responsive-back{
 		background:#001039 url(../img/ciudad-beat-em-up-openbor-indie-game.gif) bottom center no-repeat;
+	}
+	.languaje-icons {
+		left: 10px;
+	}
+	.logo {
+		height: auto;
+	}
+	.logo a.logo-nuevo{
+		position: relative;
 	}
 	.firma{
 		display:none;
@@ -837,6 +869,7 @@ footer p {
 	.contenido {
 		height: auto;
 		top: 0;
+		flex-direction: column;
 	}
 	.btn-descargar {
 		background: url(../img/btn-descargar-beat-em-up-openbor-indie-game.gif) center no-repeat;
@@ -845,7 +878,7 @@ footer p {
 		display: block;
 		position: relative;
 		margin: auto;
-		top: -60px;
+		top: 0px;
 		margin-top: 0px;
 		right:0px;
 		z-index: 0;
@@ -858,7 +891,7 @@ footer p {
 		display: block;
 		position: relative;
 		margin: auto;
-		top: -60px;
+		top: 0px;
 		margin-top: 0px;
 		right:0px;
 		z-index: 0;
@@ -870,7 +903,7 @@ footer p {
 		display: block;
 		position: relative;
 		margin: auto;
-		top: -60px;
+		top: 0px;
 		margin-top: 0px;
 		right:0px;
 		z-index: 0;
@@ -910,14 +943,14 @@ footer p {
 	}
 	.trailer {
 		float: none;
-		top: -90px;
+		top: -60px;
 		position: relative;
 		display: block;
 		margin: auto;
 	}
 	.trailer-e {
 		float: none;
-		top: -90px;
+		top: -60px;
 		position: relative;
 		display: block;
 		margin: auto;
@@ -925,9 +958,10 @@ footer p {
 	.personajes {
 		background: url(../img/trio-beat-em-up-openbor-indie-game.gif) center top no-repeat;
 		width: 100%;
-		height: 555px;
+		height: 425px;
 		position: relative;
-		top: -60px;
+		max-width: 100%;
+		background-size: contain;
 	}
 	.titulo-novedad {
 		position: relative;
@@ -946,13 +980,12 @@ footer p {
 		padding: 2px;
 		background-color: #521029;
 		border-bottom: 2px solid #fff;
-		padding-bottom: 68px;
+		padding-bottom: 0px;
 		margin-bottom: 0px;
 		margin-left: auto;
 		margin-right: auto;
 	}
 	nav {
-		top: -35px;
 		position: relative;
 	}
 	.respo-firma {
@@ -1009,12 +1042,17 @@ footer p {
 	}
 }
 @media only screen and (max-width:768px){
+	.logo a.logo-nuevo {
+		width: 65%;
+	}
+	.fancybox-outer, .fancybox-inner {
+		height: auto !important;
+	}
 	.personajes {
 		background: url(../img/trio-beat-em-up-openbor-indie-game.gif) center 117% no-repeat;
 		width: 95%;
-		height: 470px;
+		height: 325px;
 		position: relative;
-		top: -20px;
 		margin: auto;
 		background-size: contain;
 	}
@@ -1065,13 +1103,10 @@ footer p {
 		background-size: contain;
 	    max-width: 400px;
 	}
-	.logo img {
-		border: none;
-		width: 100%;
-	}
 	.trailer {
 		width: 338px;
 		height: 192px;
+		top: -45px;
 		background-size: cover;
 	}
 	.trailer:hover {
@@ -1082,6 +1117,7 @@ footer p {
 	.trailer-e {
 		width: 338px;
 		height: 192px;
+		top: -45px;
 		background-size: cover;
 	}
 	.trailer-e:hover {
@@ -1216,14 +1252,25 @@ footer p {
 		margin: auto;
 		background-size: contain;
 	}
+	.trailer-box {
+		height: 100px;
+	}
 	.logo {
-		width: 90%;
+		width: 100%;
     	margin-top: 10px;
 	}
+	.languaje-icons {
+		display: inline-flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 36px;
+	}
+
 	.trailer {
 		width: 276px;
 		height: 157px;
 		background-size: cover;
+		top: -90px;
 	}
 	.trailer:hover {
 		width: 276px;
@@ -1234,6 +1281,7 @@ footer p {
 		width: 276px;
 		height: 157px;
 		background-size: cover;
+		top: -90px;
 	}
 	.trailer-e:hover {
 		width: 276px;
@@ -1241,18 +1289,25 @@ footer p {
 		background-size: cover;
 	}
 	.btn-descargar {
-		width: 80%;
+		width: 90%;
 	}
 	.btn-download {
-		width: 80%;
+		width: 90%;
 	}
 	.btn-descargar.no{
-		width: 80%;
+		width: 90%;
 	}
+	
 }
 
 @media only screen and (max-width:380px){
 	.novedades {
-		margin-bottom: 34px;
+		margin-bottom: 0px;
+	}
+	.fancybox-outer, .fancybox-inner {
+		height: auto !important;
+	}
+	.personajes {
+	    width: 90%;
 	}
 }

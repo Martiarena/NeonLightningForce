@@ -1,6 +1,5 @@
-<nav>
-	<div class="menus-nlf">
-		<div class="respo-menu-fixed">
+<div class="menus-nlf">
+	<div class="respo-menu-fixed">
 			<div <?php if($menu == "home" ){ ?>class="menu-principal border-text text-box responsive-hidden"<?php }else{ ?>class="menu-principal border-text text-box"<?php } ?>>
 				<?php if($menu == "home" ){ ?>
 				<div class="text-arcade text-center">
@@ -19,6 +18,5 @@
 				<?php } ?>
 			</div>
 			<p class="respo-firma">&copy; <a href="http://www.trueroledreams.org/">True Role Dreams</a> 2016. <?php if ($cod_idioma==1){?>Some rights reserved x.x.<?php }else{ ?>Algunos derechos reservados x.x.<?php } ?></p>
-		</div>
 	</div>
-</nav>
+</div>
