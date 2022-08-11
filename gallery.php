@@ -33,7 +33,6 @@
 									<li><a class="fancybox" href="img/img8-beat-em-up-openbor-indie-game.png"><img src="img/img8-beat-em-up-openbor-indie-game.png" /></a></li>
 									<li><a class="fancybox" href="img/img9-beat-em-up-openbor-indie-game.png"><img src="img/img9-beat-em-up-openbor-indie-game.png" /></a></li>
 									<li><a class="fancybox" href="img/img10-beat-em-up-openbor-indie-game.png"><img src="img/img10-beat-em-up-openbor-indie-game.png" /></a></li>
-									<li class="hide-mobile">&nbsp;</li>
 									<li><a class="fancybox-media" href="https://youtu.be/pwkfc-5_ul0"><img src="img/video1-beat-em-up-openbor-indie-game.jpg" /></a></li>
 									<li><a class="fancybox-media" href="https://youtu.be/l48Gpar9ejw"><img src="img/video2-beat-em-up-openbor-indie-game.jpg" /></a></li>
 									<li><a class="fancybox-media" href="https://youtu.be/9bqU-_Lpf40"><img src="img/video3-beat-em-up-openbor-indie-game.jpg" /></a></li>
