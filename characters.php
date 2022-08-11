@@ -9,7 +9,7 @@
 	<div class="responsive-back">
 		<div class="clouds">
 			<div class="luna">
-				<div class="body-website">
+				<div class="body-website interior-pagina">
 					<div id="contenedor">
 						<header>
 							<div class="logo">
