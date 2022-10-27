@@ -825,6 +825,44 @@ footer p {
 	min-height: 620px;
 }
 
+
+
+.text-credits {
+	width: 100%;
+	max-width: 640px;
+	text-align: justify;
+	padding: 1rem;
+    box-sizing: border-box;
+	margin-top: 0px;
+	color: white;
+}
+
+
+.text-credits h4.version {
+    padding-top: 0px;
+    margin-bottom: 1rem;
+}
+
+.text-credits h5 {
+	font-family: arcade;
+    text-transform: uppercase;
+	font-size: 1rem;
+}
+
+.text-credits h5 {
+    font-family: arcade;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+}
+
+.text-credits ul {
+    padding-left: 1rem;
+}
+
+.text-credits ul li {
+    list-style: circle;
+}
+
 @media only screen and (max-width:991px){
 	.menus-nlf {
 		height: 64px;
