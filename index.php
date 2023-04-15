@@ -8,12 +8,12 @@
 		<div class="clouds" style="width:340px;">
 			<?php if ($cod_idioma==1){?>
 			<h4 class="version">Choose version</h4>
-			<a href="http://adf.ly/3029188/nlf-game" class="button-download" target="_blank">Original (PC)</a><br>
-			<a href="http://q.gs/3029188/nlf-game-mobile" class="button-download" target="_blank">.Pak file (Android)</a>
+			<a href="https://cuty.io/NLFGame" class="button-download" target="_blank">Original (PC)</a><br>
+			<a href="https://cuty.io/NLFGameM" class="button-download" target="_blank">.Pak file (Android)</a>
 			<?php }else{ ?>
 			<h4 class="version">Elija la versi&oacute;n</h4>
-			<a href="http://adf.ly/3029188/nlf-juego" class="button-download" target="_blank">Original (PC)</a><br>
-			<a href="http://q.gs/3029188/nlf-juego-mobil" class="button-download" target="_blank">Archivo .Pak (Android)</a>
+			<a href="https://cuty.io/NLFJuego" class="button-download" target="_blank">Original (PC)</a><br>
+			<a href="https://cuty.io/NLFJuegoM" class="button-download" target="_blank">Archivo .Pak (Android)</a>
 			<?php } ?>
 		</div>
 	</div>
