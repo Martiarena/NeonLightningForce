@@ -13,18 +13,22 @@ if (isset($_REQUEST['cod_idioma'])) {
 <meta name="description" lang="es" content="A&ntilde;o 2044, Tras la Tercera guerra mundial los pa&iacute;ses del norte han quedado devastados por su potente arsenal nuclear. Estados Unidos y la Uni&oacute;n Europea no existen m&aacute;s cediendo ante una nueva potencia La Uni&oacute;n del Pac&iacute;fico y su capital Ne&oacute;polis en Sudam&eacute;rica." />
 <meta name="description" lang="en" content="The year is 2044. after the events of World War III, the United States and European Union are no more, so utterly devastated they were by the nuclear fallout. the power vacuum in northern America gave rise to the 'Pacific Union', with Neopolis as it's capital in South America." />
 <meta name="keywords" content="Rpg maker comunidad, rpg maker 2003, rpg maker XP, rpg maker MV, rpg maker VX, true role dreams, OpenBor, Beat em up" />
+<meta property="og:image" content="http://trueroledreams.org/games/nlf/img/face1-beat-em-up-openbor-indie-game.jpg" />
+<meta property="og:image:alt" content="http://trueroledreams.org/games/nlf/img/face2-beat-em-up-openbor-indie-game.jpg" />
 <meta name="DC.title" content="Neon Lightning Force | Beat'em up arcade" />
 <meta name="DC.description" lang="es" content="A&ntilde;o 2044, Tras la Tercera guerra mundial los pa&iacute;ses del norte han quedado devastados por su potente arsenal nuclear. Estados Unidos y la Uni&oacute;n Europea no existen m&aacute;s cediendo ante una nueva potencia La Uni&oacute;n del Pac&iacute;fico y su capital Ne&oacute;polis en Sudam&eacute;rica." />
 <meta name="DC.description" lang="en" content="The year is 2044. after the events of World War III, the United States and European Union are no more, so utterly devastated they were by the nuclear fallout. the power vacuum in northern America gave rise to the 'Pacific Union', with Neopolis as it's capital in South America." />
 <meta name="geo.region" content="PE-LIM" />
+<meta property="og:image" content="http://trueroledreams.org/games/nlf/img/face1-beat-em-up-openbor-indie-game.jpg" />
+<meta property="og:image:alt" content="http://trueroledreams.org/games/nlf/img/face2-beat-em-up-openbor-indie-game.jpg" />
 
 <meta property="og:title" content="Neon Lightning Force | Beat'em up arcade" />
 <meta property="og:type" content="Videogame" />
 <meta property="og:description" lang="es" content="A&ntilde;o 2044, Tras la Tercera guerra mundial los pa&iacute;ses del norte han quedado devastados por su potente arsenal nuclear. Estados Unidos y la Uni&oacute;n Europea no existen m&aacute;s cediendo ante una nueva potencia La Uni&oacute;n del Pac&iacute;fico y su capital Ne&oacute;polis en Sudam&eacute;rica." />
-<meta property="og:description" lang="en" content="The year is 2044. after the events of World War III, the United States and European Union are no more, so utterly devastated they were by the nuclear fallout. the power vacuum in northern America gave rise to the 'Pacific Union', with Neopolis as it's capital in South America." />
-<meta property="og:url" content="http://www.trueroledreams.org/games/nlf" />
-<meta property="og:image" content="http://www.trueroledreams.org/games/nlf/img/face1-beat-em-up-openbor-indie-game.jpg" />
-<meta property="og:image" content="http://www.trueroledreams.org/games/nlf/img/face2-beat-em-up-openbor-indie-game.jpg" />
+<meta property="og:url" content="http://trueroledreams.org/games/nlf/" />
+<meta property="og:image" content="http://trueroledreams.org/games/nlf/img/face1-beat-em-up-openbor-indie-game.jpg" />
+<meta property="og:image:alt" content="http://trueroledreams.org/games/nlf/img/face2-beat-em-up-openbor-indie-game.jpg" />
+<!-- <meta property="og:description" lang="en" content="The year is 2044. after the events of World War III, the United States and European Union are no more, so utterly devastated they were by the nuclear fallout. the power vacuum in northern America gave rise to the 'Pacific Union', with Neopolis as it's capital in South America." /> -->
 <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 <link href="css/estilo.css" type="text/css" rel="stylesheet" />
 <script src="resources/fancybox/lib/jquery-1.9.0.min.js"></script>
