@@ -1,0 +1,393 @@
+@font-face {
+    font-family: 'Denjin-Makai';
+    src: url('../fonts/denjin-makai.ttf') format('ttf'),
+    url('../fonts/denjin-makai.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+body {
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.846355dvw;
+}
+a {
+    color: #FFFFFF;
+}
+.skyline {
+    width: 100dvw;
+    height: 18.49dvw;
+    display: flex;
+    justify-content: flex-start;
+}
+.clouds {
+    background: url(../img/clouds.png) top center repeat-x;
+    background-size: contain;
+    height: 15.052dvw;
+}
+.neopolis-city{
+    background: url(../img/neopolis.png) bottom right repeat-x;
+    background-size: contain;
+    width: 15.24605dvw;
+    height: 18.49dvw;
+}
+.neopolis-city-1{
+    background: url(../img/neopolis-1.png) bottom right repeat-x;
+    background-size: contain;
+    width: 45.5079dvw;
+    height: 18.49dvw;
+}
+.sea{
+    background: url(../img/sea.png) bottom right repeat-x;
+    background-size: contain;
+    width: 39.24605dvw;
+    height: 18.49dvw;
+}
+.moon {
+    background: url(../img/moon.gif) 80% top no-repeat;
+    background-size: contain;
+    height: 4.167dvw;
+}
+.body-website {
+    width: 100%;
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#contenedor {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.logo-neonlightningforce {
+    background: url(../img/neon-lightning-force-logo.png) center center no-repeat;
+    background-size: contain;
+    width: 30.7692em; /*26.042dvw;*/
+    height: 16.53845em; /*14.063dvw;*/
+    margin: auto;
+    margin-top: clamp(0em, 1.389dvw - 0.667rem, 1em);/*1%;*/
+    z-index: 20;
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+}
+.personajes {
+    background: url(../img/trio-beat-em-up-openbor-indie-game.gif) center top no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: clamp(35.539em, 58.271dvw - 15.47rem, 40.539em);/*12.5rem 71.7007dvh; *//*40.539em;*/
+    max-width: 39.231em; /*33.2031dvw;*/
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+.contenedor-media {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-top: clamp(4em, 26.316dvw - 12.632rem, 8.5em); /* 2rem 2.46154em, 8.5em; 15dvh;*/
+    gap: 2em; /*2dvw;*/
+}
+.media {
+    justify-content: flex-end;
+    flex-direction: column;
+    display: flex;
+    gap: 4.0816dvh;
+    align-items: center;
+    z-index: 10;
+    align-self: center;
+}
+.btn-descargar {
+    background: url(../img/btn-descargar-beat-em-up-openbor-indie-game.gif) center no-repeat;
+    width: 30.7693em;/*26.042dvw;*/
+    height: 5.693em; /*10.066dvh;*/
+    display: block;
+    background-size: contain;
+}
+.trailer:hover {
+    background: url(../img/video-beat-em-up-openbor-indie-game.png) center no-repeat;
+    background-size: contain;
+}
+.trailer {
+    position: relative;
+    width: 34.616em; /*29.297dvw;*/
+    height: 19.693em; /*34.8299dvh;*/
+    display: block;
+    background: url(../img/video-beat-em-up-openbor-indie-game.png) center no-repeat;
+    background-size: contain;
+}
+nav ul {
+    display: flex;
+    background: #000;
+    border-style: solid;
+    border-width: 0.5208336dvw;
+    /*-moz-border-image: url(../img/border-fc-beat-em-up-openbor-indie-game.png) 7;
+    -webkit-border-image: url(../img/border-fc-beat-em-up-openbor-indie-game.png) 7;
+    -o-border-image: url(../img/border-fc-beat-em-up-openbor-indie-game.png) 7;
+    border-image: url(../img/border-fc-beat-em-up-openbor-indie-game.png) 7;*/
+    position: relative;
+    z-index: 0;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    gap: 3dvw;
+}
+nav ul li {
+    font-family: 'Denjin-Makai';
+    padding: 2dvh 0dvw;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.041665dvw;
+    text-transform: uppercase;
+}
+nav ul li a:hover {
+    color: #FFE100;
+}
+.contenedor-menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    gap: 2dvw;
+    align-items: center;
+}
+#light-galeria-video {
+    margin-top: clamp(0em, 13.91dvw - 6.677rem, 5.6923em);/*10dvh;*/
+}
+.menu {
+    width: 73.8461em;/* 67dvw;*/
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -10dvh;
+}
+.menu ul, nav ul {
+    list-style: none;
+    padding-left: 0;
+}
+.menu ul.noticias {
+    margin-top: 1.7dvh;
+    margin-bottom: 1dvh;
+}
+.noticias {
+    align-self: flex-start;
+}
+.menu ul.noticias {
+    margin-top: 1.7dvh;
+    margin-bottom: 1dvh;
+}
+.novedades ul {
+    padding-left: 0.651044dvw;
+    padding-right: 0.651044dvw;
+}
+.novedades ul li {
+    display: block;
+    border-bottom: 0.1361dvh dashed #ccc;
+    padding-top: 1.3605dvh;
+    padding-bottom: 1.3605dvh;
+}
+.novedades ul li:first-child {
+    padding-top: 0;
+}
+.novedades ul li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+.scrollbar{
+	height: 9.25dvh;
+	width: 100%;
+	background:#000;
+	overflow-y: scroll;
+}
+#style-2::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 4px;
+}
+#style-2::-webkit-scrollbar{
+	width: 0.5208336dvw;
+	background-color: #666;
+}
+#style-2::-webkit-scrollbar-thumb{
+	border-radius: 0.2604dvw;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #F5F5F5;
+}
+.novedades {
+    position: relative;
+	width: 18.24dvw;
+    border-style: solid;
+    border-width: 0.0641dvw; /*0.076923em; 0.111dvw;*/
+	padding: 0.15dvw;
+    background-color: #521029;
+    border-bottom: 0px none;
+	padding-bottom: 0px;
+	margin-left: 1.53846em;/*1.30dvw;*/
+}
+.titulo-novedad {
+    background: #947b00;
+    margin: 0px;
+    border: outset 0.1302dvw #d6b500;
+    position: absolute;
+    z-index: 11;
+    top: -1.633dvh;
+    left: 0.823dvw;
+    padding-bottom: 0px;
+    padding-left: 0.326dvw;
+    padding-right: 0.326dvw;
+    padding-top: 0.136dvh;
+    font-size: 1.0417dvw;
+    letter-spacing: 0.0651dvw;
+}
+.scrollbar{
+	height: 9.25dvh;
+	width: 100%;
+	background:#000;
+	overflow-y: scroll;
+}
+#style-2::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 4px;
+}
+#style-2::-webkit-scrollbar{
+	width: 0.5208336dvw;
+	background-color: #666;
+}
+#style-2::-webkit-scrollbar-thumb{
+	border-radius: 0.2604dvw;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #F5F5F5;
+}
+.copyright {
+    text-align: center;
+    margin-top: 1dvh;
+    font-size: 0.8dvw;
+}
+.copyright p {
+    margin: 0;
+}
+.copyright a{
+    font-weight: 700;
+}
+
+@media (orientation: portrait) {
+    .contenedor-media {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0em;
+    }
+    .menu{
+        width: 100dvw;
+    }
+    .novedades {
+        width: 80dvw;
+        border-width: 0.5dvw;
+    }
+    .titulo-novedad {
+        border: outset 0.5208dvw #d6b500;
+        top: -1.5dvh;
+        padding-bottom: 0.5dvh;
+        padding-left: 1dvw;
+        padding-right: 1dvw;
+        padding-top: 0.5dvh;
+        font-size: 3dvw;
+        line-height: 0.8;
+    }
+    .moon {
+        height: 8.334dvw;
+    }
+    .clouds {
+        height: 30.104dvw;
+    }
+    .skyline{
+        height: 36.98dvw;
+    }
+    .neopolis-city {
+        height: 0dvw;
+        display: none;
+    }
+    .neopolis-city-1 {
+        height: 36.98dvw;
+        width: 50dvw;
+        background-size: cover;
+    }
+    .sea {
+        height: 36.50dvw;
+        align-self: flex-end;
+        width: 50dvw;
+    }
+    .logo-neonlightningforce {
+        width: 68.6047dvw;
+        height: 17.0601dvh;
+        margin-top: 0;
+        position: relative;
+    }
+    #light-galeria-video {
+        margin-top: 0dvh;
+    }
+    /*.trailer {
+        width: 61.297dvw;
+        height: 16.8299dvh;
+    }*/
+    .trailer {
+        width: 70.297dvw;
+        height: 17.8299dvh;
+    }
+    .btn-descargar {
+        width: 85dvw;
+        height: 7dvh;
+    }
+    .personajes {
+        height: 31.7007dvh;
+        max-width: 68.2031dvw;
+    }
+    .media {
+        gap: 3.0816dvh;
+        top: -6dvh;
+        position: relative;
+    }
+    .menu {
+        top: 0;
+    }
+    .noticias {
+        align-self: center;
+    }
+    .novedades {
+        margin-left: 0;
+    }
+    .novedades ul {
+        padding-left: 2dvw;
+        padding-right: 2dvw;
+    }
+    .novedades ul li {
+        font-size: 2.5dvw;
+    }
+    #style-2::-webkit-scrollbar {
+        width: 2.0833344dvw;
+    }
+    #style-2::-webkit-scrollbar {
+        width: 2.0833344dvw;
+    }
+    .copyright {
+        font-size: 2.5dvw;
+    }
+    nav ul {
+        gap: 0dvw;
+    }
+    nav ul li a {
+        font-size: 1.8dvw;
+    }
+    .menu ul.noticias {
+        margin-top: 2.5dvh;
+    }
+
+}
