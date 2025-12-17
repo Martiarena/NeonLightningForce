@@ -5,6 +5,14 @@
     font-weight: 400;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Revue';
+    src: url('../fonts/revue.ttf') format('ttf'),
+    url('../fonts/revue.woff') format('woff'),
+    url('../fonts/revue.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
 body {
     color: #FFFFFF;
     display: flex;
@@ -23,32 +31,34 @@ a {
     justify-content: flex-start;
 }
 .clouds {
-    background: url(../img/clouds.png) top center repeat-x;
-    background-size: contain;
+    background: url("../img/clouds.png") repeat-x top center;
+    background-size: auto 100%;
     height: 15.052dvw;
+    animation: clouds-move 60s linear infinite;
+    will-change: background-position;
 }
-.neopolis-city{
-    background: url(../img/neopolis.png) bottom right repeat-x;
+.neopolis-city {
+    background: url(../img/neopolis.gif) bottom right repeat-x;
     background-size: contain;
     width: 15.24605dvw;
-    height: 18.49dvw;
+    height: 18.49vw;
 }
-.neopolis-city-1{
-    background: url(../img/neopolis-1.png) bottom right repeat-x;
+.neopolis-city-1 {
+    background: url(../img/neopolis-1.gif) bottom right repeat-x;
     background-size: contain;
     width: 45.5079dvw;
-    height: 18.49dvw;
+    height: 18.49vw;
 }
-.sea{
+.sea {
     background: url(../img/sea.png) bottom right repeat-x;
     background-size: contain;
     width: 39.24605dvw;
-    height: 18.49dvw;
+    height: 18.49vw;
 }
 .moon {
     background: url(../img/moon.gif) 80% top no-repeat;
     background-size: contain;
-    height: 4.167dvw;
+    height: 4.167vw;
 }
 .body-website {
     width: 100%;
@@ -68,22 +78,22 @@ a {
 .logo-neonlightningforce {
     background: url(../img/neon-lightning-force-logo.png) center center no-repeat;
     background-size: contain;
-    width: 30.7692em; /*26.042dvw;*/
-    height: 16.53845em; /*14.063dvw;*/
+    width: 30.7692em;
+    height: 16.53845em;
     margin: auto;
-    margin-top: clamp(0em, 1.389dvw - 0.667rem, 1em);/*1%;*/
     z-index: 20;
     position: absolute;
     display: block;
     left: 0;
     right: 0;
+    top: 0;
 }
 .personajes {
     background: url(../img/trio-beat-em-up-openbor-indie-game.gif) center top no-repeat;
     background-size: contain;
     width: 100%;
-    height: clamp(35.539em, 58.271dvw - 15.47rem, 40.539em);/*12.5rem 71.7007dvh; *//*40.539em;*/
-    max-width: 39.231em; /*33.2031dvw;*/
+    height: clamp(35.539em, 58.271dvw - 15.47rem, 40.539em);
+    max-width: 39.231em;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
@@ -93,8 +103,11 @@ a {
     display: flex;
     justify-content: center;
     align-items: end;
-    margin-top: clamp(4em, 26.316dvw - 12.632rem, 8.5em); /* 2rem 2.46154em, 8.5em; 15dvh;*/
-    gap: 2em; /*2dvw;*/
+    gap: 2em;
+    width: 73.8461em;
+    margin: auto;
+    /*padding-top: clamp(2.5em, 7.5em, 7.5em);*/
+    padding-top: 7.5em;
 }
 .media {
     justify-content: flex-end;
@@ -107,8 +120,8 @@ a {
 }
 .btn-descargar {
     background: url(../img/btn-descargar-beat-em-up-openbor-indie-game.gif) center no-repeat;
-    width: 30.7693em;/*26.042dvw;*/
-    height: 5.693em; /*10.066dvh;*/
+    width: 30.7693em;
+    height: 5.693em;
     display: block;
     background-size: contain;
 }
@@ -118,28 +131,32 @@ a {
 }
 .trailer {
     position: relative;
-    width: 34.616em; /*29.297dvw;*/
-    height: 19.693em; /*34.8299dvh;*/
+    width: 34.616em;
+    height: 19.693em;
     display: block;
     background: url(../img/video-beat-em-up-openbor-indie-game.png) center no-repeat;
     background-size: contain;
+}
+.menu ul, nav ul {
+    list-style: none;
 }
 nav ul {
     display: flex;
     background: #000;
     border-style: solid;
-    border-width: 0.5208336dvw;
-    /*-moz-border-image: url(../img/border-fc-beat-em-up-openbor-indie-game.png) 7;
-    -webkit-border-image: url(../img/border-fc-beat-em-up-openbor-indie-game.png) 7;
-    -o-border-image: url(../img/border-fc-beat-em-up-openbor-indie-game.png) 7;
-    border-image: url(../img/border-fc-beat-em-up-openbor-indie-game.png) 7;*/
+    border-image: url(../img/border_menu.png);
+    border-image-slice: 40;
+    border-image-width: 14;
+    border-image-outset: 0;
+    border-image-repeat: round;
     position: relative;
     z-index: 0;
     flex-direction: row;
     justify-content: space-around;
     margin-top: 0px;
     margin-bottom: 0px;
-    gap: 3dvw;
+    padding: clamp(7px, 0.78125dvw, 21px);
+    gap: clamp(7px, 0.78125dvw, 21px);
 }
 nav ul li {
     font-family: 'Denjin-Makai';
@@ -154,6 +171,10 @@ nav ul li a {
 nav ul li a:hover {
     color: #FFE100;
 }
+nav ul li a.active {
+    color: #FFE100;
+}
+
 .contenedor-menu {
     display: flex;
     justify-content: center;
@@ -169,11 +190,9 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     position: relative;
-    top: -10dvh;
 }
-.menu ul, nav ul {
-    list-style: none;
-    padding-left: 0;
+.internal .menu {
+    top: 0dvh;
 }
 .menu ul.noticias {
     margin-top: 1.7dvh;
@@ -203,35 +222,36 @@ nav ul li a:hover {
     border-bottom: none;
     padding-bottom: 0;
 }
-.scrollbar{
+.scrollbar {
 	height: 9.25dvh;
 	width: 100%;
 	background:#000;
 	overflow-y: scroll;
 }
-#style-2::-webkit-scrollbar-track{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+#style-2::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(64, 45, 45, 0.3);
 	border-radius: 4px;
 }
-#style-2::-webkit-scrollbar{
+#style-2::-webkit-scrollbar {
 	width: 0.5208336dvw;
 	background-color: #666;
 }
-#style-2::-webkit-scrollbar-thumb{
+#style-2::-webkit-scrollbar-thumb {
 	border-radius: 0.2604dvw;
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 	background-color: #F5F5F5;
 }
 .novedades {
-    position: relative;
-	width: 18.24dvw;
+    position: absolute;
+    width: 18.24dvw;
     border-style: solid;
-    border-width: 0.0641dvw; /*0.076923em; 0.111dvw;*/
-	padding: 0.15dvw;
+    border-width: 0.0641dvw;
+    padding: 0.15dvw;
     background-color: #521029;
     border-bottom: 0px none;
-	padding-bottom: 0px;
-	margin-left: 1.53846em;/*1.30dvw;*/
+    padding-bottom: 0px;
+    margin-left: 1.53846em;
+    top: -9.5dvh;
 }
 .titulo-novedad {
     background: #947b00;
@@ -248,21 +268,31 @@ nav ul li a:hover {
     font-size: 1.0417dvw;
     letter-spacing: 0.0651dvw;
 }
-.scrollbar{
+.titulo-seccion {
+    font-family: "Revue";
+    font-size: 3dvw;
+    font-weight: 400;
+    line-height: 1;
+    background: linear-gradient(180deg, #f7903a, #f7f183, #f7903a);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.scrollbar {
 	height: 9.25dvh;
 	width: 100%;
 	background:#000;
 	overflow-y: scroll;
 }
-#style-2::-webkit-scrollbar-track{
+#style-2::-webkit-scrollbar-track {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 	border-radius: 4px;
 }
-#style-2::-webkit-scrollbar{
+#style-2::-webkit-scrollbar {
 	width: 0.5208336dvw;
 	background-color: #666;
 }
-#style-2::-webkit-scrollbar-thumb{
+#style-2::-webkit-scrollbar-thumb {
 	border-radius: 0.2604dvw;
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 	background-color: #F5F5F5;
@@ -275,22 +305,159 @@ nav ul li a:hover {
 .copyright p {
     margin: 0;
 }
-.copyright a{
+.copyright a {
     font-weight: 700;
+}
+.lg-container.lg-show {
+    position: absolute;
+}
+/*.contenedor-interna {
+    /*margin-top: clamp(4em, 32.316dvw - 12.632rem, 16em) !important;
+    margin-top: clamp(4em, 26.316dvw - 12.632rem, 16em) !important;
+    /* margin-top: 25.16328dvh !important;*/
+    /*height: clamp(32em, 59.9837dvh - 15.47rem, 40.539em);*/
+    /*height: auto;*/
+    /*height: min(100dvh, 42em);
+    width: 63.8461em;
+    margin: auto;
+    background: url("../img/loading-fondo.png") center center no-repeat;
+    background-size: cover;
+    border-style: solid;
+    border-image: url(../img/border_menu1.png);
+    border-image-slice: 60;
+    border-image-width: 10;
+    border-image-outset: 4 2;
+    border-image-repeat: round;
+    border-bottom: 0;
+    padding: 2em;
+    box-sizing: border-box;
+    /*min-height: 21.8em;*/
+    /*padding-bottom: 0px;
+}*/
+.contenedor-interna {
+    width: 63.8461em;
+    padding-top: 13.5em;
+}
+
+.fondo-interna {
+    background: url("../img/loading-fondo.png") center center no-repeat;
+    background-size: cover;
+    border-style: solid;
+    border-image: url("../img/border_menu1.png");
+    border-image-slice: 60;
+    border-image-width: 10;
+    border-image-outset: 4 2;
+    border-image-repeat: round;
+    border-bottom: 0;
+    padding: 1em;
+    max-height: 34.5em;
+    box-sizing: border-box;
+    min-height: 21.8em;
+    height: 100dvh;
+    max-width: 63.8461em;
+    width: 100%;
+}
+/*
+.fondo-interna {
+    padding: 1em;
+    width: 100%;
+    max-width: 63.8461em;
+    min-height: 21.8em;
+    max-height: min(34.5em, 100dvh);
+    box-sizing: border-box;
+}*/
+
+.fondo-contenido {
+    background-color: #000000a6;
+    padding: 1em;
+    height: 100dvh;
+    max-height: 100%;
+}
+
+.contenedor-interna p{
+    font-size: 1em;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+}
+
+.fondo-contenido ul {
+    padding-left: 1em;
+}
+.fondo-contenido ul li {
+    margin-bottom: 1em;
+}
+
+@keyframes clouds-move {
+    from {
+        background-position-x: 0;
+    }
+    to {
+        background-position-x: -2000px;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .logo-neonlightningforce {
+        width: 24.7692em;
+        height: 13.53845em;
+    }
+    .trailer {
+        width: 30.616em;
+        height: 18em;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+    .logo-neonlightningforce {
+        width: 24.7692em;
+        height: 13.53845em;
+    }
 }
 
 @media (orientation: portrait) {
+    .body-website {
+        justify-content: space-between;
+        height: 100dvh;
+    }
     .contenedor-media {
         flex-direction: column;
         align-items: center;
-        margin-top: 0em;
+        padding-top: 0em;
     }
     .menu{
         width: 100dvw;
     }
+    
+    .contenedor-interna {
+        width: 82dvw;
+    }
+    .fondo-interna {
+        max-width: 100em;
+        max-height: 100%;
+        min-height: auto;
+        height: auto;
+    }
+    .fondo-contenido {
+        padding: 2em;
+        height: auto;
+        max-height: 100%;
+    }
+    .titulo-seccion {
+        text-align: center;
+        font-size: 6dvw;
+    }
+    .contenedor-interna p, .fondo-contenido ul li {
+        font-size: 4em;
+    }
+    .fondo-contenido ul {
+        padding-left: 4em;
+    }
     .novedades {
         width: 80dvw;
         border-width: 0.5dvw;
+        top: 0;
+        position: relative;
     }
     .titulo-novedad {
         border: outset 0.5208dvw #d6b500;
@@ -334,10 +501,10 @@ nav ul li a:hover {
     #light-galeria-video {
         margin-top: 0dvh;
     }
-    /*.trailer {
-        width: 61.297dvw;
-        height: 16.8299dvh;
-    }*/
+    nav ul {
+        border-image-slice: 30;
+        border-image-width: 7;
+    }
     .trailer {
         width: 70.297dvw;
         height: 17.8299dvh;
@@ -383,11 +550,35 @@ nav ul li a:hover {
     nav ul {
         gap: 0dvw;
     }
+    nav ul li {
+        padding: 1.5dvh 0dvw;
+    }
     nav ul li a {
         font-size: 1.8dvw;
     }
     .menu ul.noticias {
-        margin-top: 2.5dvh;
+        margin-top: 1.05rem;
     }
 
+}
+
+@media (max-width: 350px) {
+    .personajes {
+        height: 28.7007dvh;
+    }
+}
+
+@media (max-height: 435px) {
+    .contenedor-interna {
+        padding-top: clamp(10.5em, 18dvh, 13.5em);
+    }
+}
+
+@media (max-height: 350px) {
+    .contenedor-interna {
+        padding-top: 10.5em;
+    }
+    .fondo-interna {
+        height: 26.8em;
+    }
 }

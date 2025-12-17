@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			thumbnail: true,
 		});
 	}
-
+/*
 	const gallery_html = document.getElementById('light-html');
 	if (gallery_html) {
     	lightGallery(gallery_html, {
@@ -70,5 +70,63 @@ document.addEventListener("DOMContentLoaded", () => {
 			dynamic: false, 
 			appendSubHtmlTo: ".lg-item", 
 		});
-	}
+	}*/
+});
+
+
+document.querySelectorAll('.gallery-html').forEach((link) => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    const targetId = link.getAttribute('href').replace('#', '');
+    const target = document.getElementById(targetId);
+
+    if (!target) return;
+
+    const htmlContent = target.innerHTML;
+
+    const temp = document.createElement('button');
+
+    const instance = lightGallery(temp, {
+      dynamic: true,
+      dynamicEl: [
+        {
+          src: '',
+          subHtml: htmlContent,
+        }
+      ],
+      download: false
+    });
+
+    instance.openGallery(0);
+  });
+});
+
+
+document.querySelectorAll('.gallery-html_2').forEach((link) => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    const targetId = link.getAttribute('href').replace('#', '');
+    const target = document.getElementById(targetId);
+
+    if (!target) return;
+
+    const htmlContent = target.innerHTML;
+
+    const temp = document.createElement('button');
+
+    const instance = lightGallery(temp, {
+      dynamic: true,
+      dynamicEl: [
+        {
+          src: '',
+          subHtml: htmlContent,
+        }
+      ],
+      download: false
+    });
+
+    instance.openGallery(0);
+  });
 });

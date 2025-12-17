@@ -1,0 +1,32 @@
+---
+const { internal = false, currentPage } = Astro.props;
+
+import News from '../components/News.astro';
+---
+<div class="contenedor-menu">
+    <div class="menu">
+        {!internal && <News />}
+        <nav>
+            <ul>
+                <li><a href="/" class={currentPage === 'home' ? 'active' : ''}>Inicio</a></li>
+                <li><a href="/story" class={currentPage === 'story' ? 'active' : ''}>Historia</a></li>
+                <li><a href="/characters" class={currentPage === 'characters' ? 'active' : ''}>Personajes</a></li>
+                <li><a href="/gallery" class={currentPage === 'gallery' ? 'active' : ''}>Screenshots</a></li>
+                <li><a href="/tips" class={currentPage === 'tips' ? 'active' : ''}>Tips</a></li>
+            </ul>
+        </nav>
+        <div class="copyright">
+            <div id="light-html_2">
+                <p>
+                    &copy; True Role Dreams 2016-2026. Algunos derechos
+                    reservados x.x. | <a
+                        class="gallery-html_2"
+                        href="#creditos-recursos">Créditos y recursos</a>
+                </p>
+                <div id="creditos-recursos" style="display:none;">
+                    <div>Creditos y Recursos</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

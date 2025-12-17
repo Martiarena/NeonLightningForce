@@ -1,0 +1,33 @@
+---
+const {
+  title = "Neon Lightning Force",
+  pageType = "home",
+  currentPage = 'home'
+} = Astro.props;
+
+import Background from '../components/Background.astro';
+import MenuCopy from '../components/MenuCopy.astro';
+---
+
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{title}</title>
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/estilo.css" />
+</head>
+<body class={pageType}>
+    <Background />
+	<div class="main-wrapper">
+		<div class="body-website">
+			<a href="/" class="logo-neonlightningforce"></a>
+			<div id="contenedor">
+                <slot />
+				<MenuCopy currentPage={currentPage} internal={pageType === 'internal'}/>
+			</div>
+		</div>
+		<script type="module" src="/src/scripts/script.js" client:load></script>
+	</div>
+</body>
+</html>
