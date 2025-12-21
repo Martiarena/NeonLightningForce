@@ -1,14 +1,193 @@
 ---
-import MainLayout from '../../layouts/MainLayout.astro';
+import MainLayout from "../../layouts/MainLayout.astro";
+import "../../style/characters-tabs.css";
 ---
 
-<MainLayout currentPage="characters" title="Personajes | Neon Lightning Force" pageType="internal">
+<MainLayout
+	currentPage="characters"
+	title="Personajes | Neon Lightning Force"
+	pageType="internal"
+>
 	<section class="contenedor-media contenedor-interna">
 		<div class="fondo-interna">
 			<div class="fondo-contenido">
 				<h1 class="titulo-seccion">Personajes</h1>
-				
+				<div class="tabs" data-tabs>
+					<div class="tabs-header">
+						<button class="tab tab-1 active" data-tab="isolda">
+							<img src="/img/icons/isolda-shinawara-icon.png" alt="Isolda Shinawara" />
+						</button>
+
+						<button class="tab tab-2" data-tab="steven">
+							<img src="/img/icons/steven-wolfgang-icon.png" alt="Steven Wolfgang" />
+						</button>
+
+						<button class="tab tab-3" data-tab="negishi">
+							<img src="/img/icons/dr-roderick-negishi-icon.png" alt="Dr. Roderick Negishi" />
+						</button>
+
+						<button class="tab" data-tab="melania">
+							<img src="/img/icons/melania-shinawara-icon.png" alt="Melania Shinawara" />
+						</button>
+
+						<button class="tab" data-tab="atlas">
+							<img src="/img/icons/project-atlas-icon.png" alt="Proyecto Atlas" />
+						</button>
+
+						<button class="tab" data-tab="thundervolt">
+							<img src="/img/icons/thundervolt-icon.png" alt="Thundervolt" />
+						</button>
+
+						<button class="tab" data-tab="mikhail">
+							<img src="/img/icons/mikhail-shenkman-icon.png" alt="Mikhail Shenkman" />
+						</button>
+
+						<button class="tab" data-tab="policia">
+							<img src="/img/icons/neopolis-police-icon.png" alt="Policia de Neopolis" />
+						</button>
+
+						<button class="tab" data-tab="vixor">
+							<img src="/img/icons/vixor-wolter-icon.png" alt="Vixor Kramer" />
+						</button>
+					</div>
+
+					<div class="tabs-content">
+						<section class="tab-panel active" id="isolda">
+							<h2 class="titulo-isolda">Isolda Shinawara</h2>
+							<div class="descripcion-personaje">
+								<ul>
+									<li><strong>Edad:</strong> 25 años</li>
+									<li><strong>Peso:</strong> 64 kg</li>
+									<li><strong>Altura:</strong> 1.68 m</li>
+									<li><strong>Ocupación:</strong> Policía</li>
+								</ul>
+								<div class="perfil-personajes">
+									<p>Entrenada desde niña en muay thai para sobrevivir en un mundo marcado por la violencia tras la Tercera Guerra Mundial. Gracias a su disciplina y habilidades de combate ha detenido a peligrosos criminales en las calles de la ciudad.</p>
+									<p>Entre sus colegas es conocida como “La Dama de Acero”, una oficial decidida que cree firmemente en imponer orden donde la ley comienza a fallar.</p>
+								</div>
+							</div>
+						</section>
+						<section class="tab-panel" id="steven">
+							<h2 class="titulo-steven">Steven Wolfgang</h2>
+							<div class="descripcion-personaje">
+								<ul>
+									<li><strong>Edad:</strong> 28 años</li>
+									<li><strong>Peso:</strong> 68 kg</li>
+									<li><strong>Altura:</strong> 1.70 m</li>
+									<li><strong>Ocupación:</strong> Director General</li>
+								</ul>
+								<div class="perfil-personajes">
+								<p>Aficionado al kempo, se entrenó en algunas de las mejores escuelas del mundo, destacando por su dominio del combate armado y cuerpo a cuerpo.</p>
+								<p>Steven es dueño de Antares, una corporación dedicada a la manufactura de armamento avanzado,  financia y prueba personalmente los prototipos experimentales creados por Antares su
+									
+									
+									sino que
+
+									como el Guante de Fuego, un arma poco convencional que utiliza en combate. Acompaña a Isolda en su investigación, aportando información y una capacidad de combate tan precisa como letal.</p>
+								</div>
+							</div>
+						</section>
+						<section class="tab-panel" id="negishi">
+							<h2 class="titulo-negishi">Dr. Roderick Negishi</h2>
+							<div class="descripcion-personaje">
+								<ul>
+									<li><strong>Edad:</strong> 40 años</li>
+									<li><strong>Peso:</strong> 180 kg</li>
+									<li><strong>Altura:</strong> 2.05 m</li>
+									<li><strong>Ocupación:</strong> Científico</li>
+								</ul>
+								<div class="perfil-personajes">
+									<p>Autoridad mundial en la biogenética, convertido en un extraño tipo de bioroide debido a un misterioso “accidente” del que busca venganza.</p>
+								</div>
+							</div>
+						</section>
+						<section class="tab-panel" id="melania">
+							<h2 class="titulo-melania">Melania Shinawara</h2>
+							<div class="descripcion-personaje">
+								<ul>
+									<li><strong>Edad:</strong> 24 años</li>
+									<li><strong>Peso:</strong> 55 kg</li>
+									<li><strong>Altura:</strong> 1.60 m</li>
+									<li><strong>Ocupación:</strong> Estríper</li>
+								</ul>
+								<div class="perfil-personajes">
+									<p>Trabaja en un club nocturno de Neópolis como bailarina y estríper. Es relajada y despreocupada. Vive junto a su prima Isolda, con quien mantiene una relación constante de choques y contrastes.</p>
+									<p>Melania fue entrenada con Isolda, pero más que impartir justicia prefiere ocuparse de asuntos personales. Ama los lujos, busca estatus y sólo actua cuando hay un beneficio propio.</p>
+								</div>
+							</div>
+						</section>
+						<section class="tab-panel" id="atlas">
+							<h2 class="titulo-atlas">Proyecto Atlas</h2>
+							<div class="descripcion-personaje">
+								<ul>
+									<li><strong>Edad:</strong> 10 años</li>
+									<li><strong>Peso:</strong> 260 kg</li>
+									<li><strong>Altura:</strong> 1.95 m</li>
+									<li><strong>Ocupación:</strong> Droid de combate</li>
+								</ul>
+								<div class="perfil-personajes">
+									<p>Droid de combate creado por la Corporación Talos. Puede actuar a voluntad, consume materia orgánica como combustible.</p>
+								</div>
+							</div>
+						</section>
+						<section class="tab-panel" id="thundervolt">
+							<h2 class="titulo-thundervolt">Thundervolt</h2>
+							<div class="descripcion-personaje">
+								<ul>
+									<li><strong>Edad:</strong> 3 años</li>
+									<li><strong>Peso:</strong> 4.37 kg</li>
+									<li><strong>Altura:</strong> 0.48 m</li>
+									<li><strong>Ocupación:</strong> Mascota</li>
+								</ul>
+								<div class="perfil-personajes">
+									<p>Halcón de Steven, suele viajar a su lado salvo cuando Steven tiene "negocios que atender". Es muy inteligente pero también agresivo.</p>
+								</div>
+							</div>
+						</section>
+						<section class="tab-panel" id="mikhail">
+							<h2 class="titulo-mikhail">Mikhail Shenkman</h2>
+							<div class="descripcion-personaje">
+								<ul>
+									<li><strong>Edad:</strong> 45 años</li>
+									<li><strong>Peso:</strong> 70 kg</li>
+									<li><strong>Altura:</strong> 1.72 m</li>
+									<li><strong>Ocupación:</strong> Comandante</li>
+								</ul>
+								<div class="perfil-personajes">
+									<p>Comandante de policia en Neópolis y jefe de Isolda. Sirvió al ejército de Rusia en la Tercera Guerra Mundial.</p>
+								</div>
+							</div>
+						</section>
+						<section class="tab-panel" id="policia">
+							<h2 class="titulo-police">Policia de Neopolis</h2>
+							<div class="descripcion-personaje">
+								<ul>
+									<li><strong>Edad Promedio:</strong> 25 - 30 años</li>
+								</ul>
+								<div class="perfil-personajes">
+									<p>Confiados en la actual paz mundial, dejaron de entrenar volviéndose ávidos devoradores de rosquillas.</p>
+								</div>
+							</div>
+						</section>
+						<section class="tab-panel" id="vixor">
+							<h2 class="titulo-vixor">Vixor Kramer</h2>
+							<div class="descripcion-personaje">
+								<ul>
+									<li><strong>Edad:</strong> 33 años</li>
+									<li><strong>Peso:</strong> 70 kg</li>
+									<li><strong>Altura:</strong> 1.72 m</li>
+									<li><strong>Ocupación:</strong> Director General</li>
+								</ul>
+								<div class="perfil-personajes">
+									<p>Frío, calculador y siempre a un paso adelante, es propietario de Talos, una corporación militar privada que obtuvo enormes beneficios durante la Tercera Guerra Mundial. Es sospechoso de mantener vínculos con cárteles criminales y de traficar armamento prohibido por las Naciones Unidas.</p>
+									<p>Se rumorea que el apellido “Kramer” no es real, sino un alias cuidadosamente construido para ocultar su verdadero origen.</p>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
 </MainLayout>
+<script src="../../scripts/tabs.js"></script>

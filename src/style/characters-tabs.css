@@ -1,0 +1,291 @@
+.tabs .tabs-header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 0.5em;
+    grid-row-gap: 0.1em;
+    width: 5.5em;
+    max-height: 20em;
+}
+
+.tabs .tabs-header button {
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.tabs .tabs-header button img {
+    width: auto;
+    border: 0.153846em solid white;
+    cursor: pointer;
+}
+
+.tab-1 {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.tab-2 {
+    grid-area: 2 / 1 / 3 / 3;
+}
+
+.tab-3 {
+    grid-area: 3 / 1 / 4 / 3;
+}
+
+.tab {
+    background: none;
+    border: none;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.tab img {
+    width: 4em;
+    height: auto;
+}
+
+.tabs-header {
+    display: flex;
+    gap: 0.5em;
+    justify-content: center;
+}
+
+.tab.active {
+    opacity: 1;
+}
+
+.tab-panel {
+    display: none;
+}
+
+.tab-panel.active {
+    display: block;
+}
+
+.tab-panel {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.tab-panel.active {
+    opacity: 1;
+}
+
+.tabs {
+    flex-direction: row;
+    display: flex;
+    gap: 2em;
+    height: 100%;
+    box-sizing: border-box;
+    max-height: 26.5em;
+}
+
+.tabs-content {
+    max-width: 70em;
+    width: 100%;
+    background: black;
+    padding: 1.15em;
+    box-sizing: border-box;
+    border: 0.25em double white;
+}
+
+.tab-panel ul li {
+    list-style: none;
+    margin-bottom: 0.5em;
+    font-size: 1.1em;
+}
+
+.tab-panel ul {
+    padding-left: 0;
+}
+
+.tab-panel h2 {
+    margin-bottom: 0.5em;
+    font-family: 'Denjin-Makai';
+    text-transform: uppercase;
+    font-size: 1.5em;
+    line-height: 1.4;
+}
+
+#isolda {
+    background: url(../img/isolda-shinawara-sprite.gif) right bottom no-repeat;
+    height: 100%;
+}
+
+#steven {
+    background: url(../img/steven-wolfgang-sprite.gif) right bottom no-repeat;
+    height: 100%;
+}
+
+#melania {
+    background: url(../img/melania-shinawara-sprite.png) right bottom no-repeat;
+    height: 100%;
+}
+
+#vixor {
+    background: url(../img/vixor-kramer-sprite.png) right bottom no-repeat;
+    height: 100%;
+}
+
+.descripcion-personaje {
+    display: flex;
+    flex-direction: column;
+    max-width: 32em;
+}
+
+.titulo-isolda {
+    color: #00a0b4;
+    background: #00a0b4;
+    background: -webkit-linear-gradient(top, #00a0b4, #00dce6, #00a0b4);
+    background: linear-gradient(top, #00a0b4, #00dce6, #00a0b4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.titulo-steven {
+    color: #c64200;
+    background: #c64200;
+    background: -webkit-linear-gradient(top, #c64200, #ffff00, #c64200);
+    background: linear-gradient(top, #c64200, #ffff00, #c64200);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.titulo-negishi {
+    color: #8c9650;
+    background: #8c9650;
+    background: -webkit-linear-gradient(top, #8c9650, #c8dc8c, #8c9650);
+    background: linear-gradient(top, #8c9650, #c8dc8c, #8c9650);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.titulo-melania {
+    color: #b9255b;
+    background: #b9255b;
+    background: -webkit-linear-gradient(top, #b9255b, #eda6d0, #b9255b);
+    background: linear-gradient(top, #b9255b, #eda6d0, #b9255b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.titulo-atlas {
+    color: #395a4e;
+    background: #395a4e;
+    background: -webkit-linear-gradient(top, #395a4e, #adc9c4, #395a4e);
+    background: linear-gradient(top, #395a4e, #adc9c4, #395a4e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.titulo-thundervolt {
+    color: #ac902d;
+    background: #ac902d;
+    background: -webkit-linear-gradient(top, #ac902d, #feee99, #ac902d);
+    background: linear-gradient(top, #ac902d, #feee99, #ac902d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.titulo-mikhail {
+    color: #9c9c9c;
+    background: #9c9c9c;
+    background: -webkit-linear-gradient(top, #9c9c9c, #dedede, #9c9c9c);
+    background: linear-gradient(top, #9c9c9c, #dedede, #9c9c9c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.titulo-police {
+    color: #3d4bc2;
+    background: #3d4bc2;
+    background: -webkit-linear-gradient(top, #3d4bc2, #a0bcfc, #3d4bc2);
+    background: linear-gradient(top, #3d4bc2, #a0bcfc, #3d4bc2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.titulo-vixor {
+    color: #62628B;
+    background: #62628B;
+    background: -webkit-linear-gradient(top, #62628B, #C7C7F8, #62628B);
+    background: linear-gradient(top, #62628B, #C7C7F8, #62628B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (orientation: portrait) {
+    .tabs {
+        flex-direction: column;
+        max-height: fit-content;
+    }
+    .tabs-content {
+        max-width: 100%;
+    }
+    .tabs .tabs-header {
+        grid-template-columns: repeat(6, 8em);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        max-height: fit-content;
+        width: 100%;
+    }
+    .tab-1 { 
+        grid-area: 1 / 1 / 2 / 3; 
+    }
+    .tab-2 { 
+        grid-area: 1 / 3 / 2 / 5;
+    }
+    .tab-3 {
+        grid-area: 1 / 5 / 2 / 7;
+    }
+    .descripcion-personaje {
+        padding-bottom: 45em;
+        max-width: 100%;
+    }
+    .tab-panel h2 {
+        font-size: 3.5em;
+        margin-bottom: 1em;
+    }
+    .tab-panel ul li {
+        font-size: 3em;
+    }
+    .tabs-content {
+        padding: 3em;
+        border: 0.75em double white;
+    }
+    .perfil-personajes {
+        max-height: 46.202em;
+    }
+    #isolda {
+        background-size: 50%;
+        background-position: 40% 100%;
+    }
+    #steven {
+        background-size: 50%;
+        background-position: 50% 100%;
+    }
+    #melania{
+        background-size: 18%;
+        background-position: 50% 100%;
+    }
+    #vixor{
+        background-size: 20%;
+        background-position: 50% 100%;
+    }
+    .titulo-seccion {
+        text-align: center;
+        font-size: 7em;
+        margin-bottom: 0.4em;
+    }
+    .tab-panel ul {
+        display: grid;
+        grid-template-columns: 0.75fr 1.25fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    .contenedor-interna p {
+        text-align: justify;
+    }
+}

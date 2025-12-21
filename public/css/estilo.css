@@ -31,7 +31,7 @@ a {
     justify-content: flex-start;
 }
 .clouds {
-    background: url("../img/clouds.png") repeat-x top center;
+    background: url(../img/clouds.png) repeat-x top center;
     background-size: auto 100%;
     height: 15.052dvw;
     animation: clouds-move 60s linear infinite;
@@ -106,7 +106,6 @@ a {
     gap: 2em;
     width: 73.8461em;
     margin: auto;
-    /*padding-top: clamp(2.5em, 7.5em, 7.5em);*/
     padding-top: 7.5em;
 }
 .media {
@@ -174,7 +173,6 @@ nav ul li a:hover {
 nav ul li a.active {
     color: #FFE100;
 }
-
 .contenedor-menu {
     display: flex;
     justify-content: center;
@@ -183,10 +181,10 @@ nav ul li a.active {
     align-items: center;
 }
 #light-galeria-video {
-    margin-top: clamp(0em, 13.91dvw - 6.677rem, 5.6923em);/*10dvh;*/
+    margin-top: clamp(0em, 13.91dvw - 6.677rem, 5.6923em);
 }
 .menu {
-    width: 73.8461em;/* 67dvw;*/
+    width: 73.8461em;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -311,39 +309,15 @@ nav ul li a.active {
 .lg-container.lg-show {
     position: absolute;
 }
-/*.contenedor-interna {
-    /*margin-top: clamp(4em, 32.316dvw - 12.632rem, 16em) !important;
-    margin-top: clamp(4em, 26.316dvw - 12.632rem, 16em) !important;
-    /* margin-top: 25.16328dvh !important;*/
-    /*height: clamp(32em, 59.9837dvh - 15.47rem, 40.539em);*/
-    /*height: auto;*/
-    /*height: min(100dvh, 42em);
-    width: 63.8461em;
-    margin: auto;
-    background: url("../img/loading-fondo.png") center center no-repeat;
-    background-size: cover;
-    border-style: solid;
-    border-image: url(../img/border_menu1.png);
-    border-image-slice: 60;
-    border-image-width: 10;
-    border-image-outset: 4 2;
-    border-image-repeat: round;
-    border-bottom: 0;
-    padding: 2em;
-    box-sizing: border-box;
-    /*min-height: 21.8em;*/
-    /*padding-bottom: 0px;
-}*/
 .contenedor-interna {
     width: 63.8461em;
     padding-top: 13.5em;
 }
-
 .fondo-interna {
-    background: url("../img/loading-fondo.png") center center no-repeat;
+    background: url(../img/loading-fondo.png) center center no-repeat;
     background-size: cover;
     border-style: solid;
-    border-image: url("../img/border_menu1.png");
+    border-image: url(../img/border_menu1.png);
     border-image-slice: 60;
     border-image-width: 10;
     border-image-outset: 4 2;
@@ -357,34 +331,44 @@ nav ul li a.active {
     max-width: 63.8461em;
     width: 100%;
 }
-/*
-.fondo-interna {
-    padding: 1em;
-    width: 100%;
-    max-width: 63.8461em;
-    min-height: 21.8em;
-    max-height: min(34.5em, 100dvh);
-    box-sizing: border-box;
-}*/
-
 .fondo-contenido {
     background-color: #000000a6;
     padding: 1em;
     height: 100dvh;
     max-height: 100%;
 }
-
 .contenedor-interna p{
-    font-size: 1em;
+    font-size: 1.1em;
     line-height: 1.5em;
     margin-bottom: 1em;
 }
-
 .fondo-contenido ul {
     padding-left: 1em;
+    font-size: 1.1em;
 }
 .fondo-contenido ul li {
     margin-bottom: 1em;
+}
+.galeria-imagenes {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0.5em;
+    grid-row-gap: 0.5em;
+}
+.galeria-imagenes img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    border: 0.1361dvh solid white;
+    box-sizing: border-box;
+}
+#light-html {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5em;
+    align-content: center;
+    text-align: center;
 }
 
 @keyframes clouds-move {
@@ -395,8 +379,6 @@ nav ul li a.active {
         background-position-x: -2000px;
     }
 }
-
-
 @media (max-width: 991px) {
     .logo-neonlightningforce {
         width: 24.7692em;
@@ -407,14 +389,12 @@ nav ul li a.active {
         height: 18em;
     }
 }
-
 @media (min-width: 500px) and (max-width: 768px) {
     .logo-neonlightningforce {
         width: 24.7692em;
         height: 13.53845em;
     }
 }
-
 @media (orientation: portrait) {
     .body-website {
         justify-content: space-between;
@@ -424,11 +404,12 @@ nav ul li a.active {
         flex-direction: column;
         align-items: center;
         padding-top: 0em;
+        max-height: 164em;
     }
+    
     .menu{
         width: 100dvw;
     }
-    
     .contenedor-interna {
         width: 82dvw;
     }
@@ -448,7 +429,7 @@ nav ul li a.active {
         font-size: 6dvw;
     }
     .contenedor-interna p, .fondo-contenido ul li {
-        font-size: 4em;
+        font-size: 3.3em;
     }
     .fondo-contenido ul {
         padding-left: 4em;
@@ -559,7 +540,9 @@ nav ul li a.active {
     .menu ul.noticias {
         margin-top: 1.05rem;
     }
-
+    .fondo-contenido ul {
+        padding-left: 1em;
+    }
 }
 
 @media (max-width: 350px) {
