@@ -370,6 +370,24 @@ nav ul li a.active {
     align-content: center;
     text-align: center;
 }
+.subtitulo{
+    font-family: 'Denjin-Makai';
+    text-transform: uppercase;
+    font-size: 1.1em;
+}
+
+.columnas-contenido {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2em;
+    justify-content: space-between;
+}
+.col1 {
+    width: 60%;
+}
+.col2 {
+    width: 40%;
+}
 
 @keyframes clouds-move {
     from {
@@ -400,24 +418,43 @@ nav ul li a.active {
         justify-content: space-between;
         height: 100dvh;
     }
+    #contenedor.internas {
+        height: calc(100% - 35em);
+    }
+    .columnas-contenido {
+        flex-direction: column;
+    }
+    .col1, .col2 {
+        width: 100%;
+    }
+    .fondo-interna {
+        height: 100%;
+    }
     .contenedor-media {
         flex-direction: column;
         align-items: center;
         padding-top: 0em;
-        max-height: 164em;
     }
-    
+    .galeria-imagenes {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 1.5em;
+        grid-row-gap: 1.5em;
+    }
     .menu{
         width: 100dvw;
     }
     .contenedor-interna {
         width: 82dvw;
+        height: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
     }
     .fondo-interna {
         max-width: 100em;
-        max-height: 100%;
-        min-height: auto;
-        height: auto;
+        max-height: none;
+        margin-top: 0;
+        margin-bottom: 0;
     }
     .fondo-contenido {
         padding: 2em;
@@ -474,9 +511,9 @@ nav ul li a.active {
         width: 50dvw;
     }
     .logo-neonlightningforce {
-        width: 68.6047dvw;
-        height: 17.0601dvh;
-        margin-top: 0;
+        width: 56em;
+        height: 30em;
+        margin-top: 0em;
         position: relative;
     }
     #light-galeria-video {
@@ -541,7 +578,7 @@ nav ul li a.active {
         margin-top: 1.05rem;
     }
     .fondo-contenido ul {
-        padding-left: 1em;
+        padding-left: 4em;
     }
 }
 

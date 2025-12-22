@@ -22,7 +22,7 @@ import MenuCopy from '../components/MenuCopy.astro';
 	<div class="main-wrapper">
 		<div class="body-website">
 			<a href="/" class="logo-neonlightningforce"></a>
-			<div id="contenedor">
+			<div id="contenedor" class={pageType === 'internal' ? 'internas' : ''}>
                 <slot />
 				<MenuCopy currentPage={currentPage} internal={pageType === 'internal'}/>
 			</div>
