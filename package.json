@@ -1,0 +1,16 @@
+{
+  "name": "neonlightningforce",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.0",
+    "astro": "^5.12.8",
+    "glightbox": "^3.3.1"
+  }
+}

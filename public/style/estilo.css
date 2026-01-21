@@ -1,0 +1,599 @@
+:root {
+    --text-size-news: 1.0417dvw;
+    --text-size-general: 0.846355dvw; /* revisar xd */
+    --text-size-menu: 1.041665dvw;
+    --text-size-title: 3dvw;
+    --text-size-button: 1.041665dvw;
+    --text-size-button-title: 1.1dvw;
+    --text-size-credits: 0.8dvw;
+}
+
+@font-face {
+    font-family: 'Denjin-Makai';
+    src: url('../fonts/denjin-makai.ttf') format('ttf'),
+        url('../fonts/denjin-makai.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Revue';
+    src: url('../fonts/revue.ttf') format('ttf'),
+        url('../fonts/revue.woff') format('woff'),
+        url('../fonts/revue.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* ---- General ---- */
+
+body {
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.846355dvw;
+}
+
+a {
+    color: #FFFFFF;
+}
+
+ul {
+    padding-left: 1em;
+}
+ul li {
+    margin-bottom: 1em;
+}
+
+/* ---- 0 ---- */
+
+/* ---- Fondo ---- */
+
+.skyline {
+    width: 100dvw;
+    height: 18.49dvw;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.clouds {
+    background: url(../img/clouds.png) repeat-x top center;
+    background-size: auto 100%;
+    height: 15.052dvw;
+    animation: clouds-move 60s linear infinite;
+    will-change: background-position;
+}
+
+.neopolis-city {
+    background: url(../img/neopolis.gif) bottom right repeat-x;
+    background-size: contain;
+    width: 15.24605dvw;
+    height: 18.49vw;
+}
+
+.neopolis-city-1 {
+    background: url(../img/neopolis-1.gif) bottom right repeat-x;
+    background-size: contain;
+    width: 45.5079dvw;
+    height: 18.49vw;
+}
+
+.sea {
+    background: url(../img/sea.png) bottom right repeat-x;
+    background-size: contain;
+    width: 39.24605dvw;
+    height: 18.49vw;
+}
+
+.moon {
+    background: url(../img/moon.gif) 80% top no-repeat;
+    background-size: contain;
+    height: 4.167vw;
+}
+
+/* ---- 0 ---- */
+
+/* ---- Marco ---- */
+
+.body-website {
+    width: 100%;
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--text-size-general);
+}
+
+.logo-neonlightningforce {
+    background: url(../img/neon-lightning-force-logo.png) center center no-repeat;
+    background-size: contain;
+    width: 30.7692em;
+    height: 16.53845em;
+    margin: auto;
+    z-index: 20;
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+#contenedor {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    max-width: 73.8461em;
+    padding-top: 7.5em;
+}
+
+/* ---- 0 ---- */
+
+/* --------------------- */
+/* ---- Componentes ---- */
+/* --------------------- */
+
+/* ---- Botones ---- */
+
+.boton {
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    height: 3.2em;
+    max-height: 3.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--text-size-button);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Denjin-Makai';
+    border-width: 0.26046dvw;
+    border-style: solid;
+    color: white;
+    margin-bottom: 1em;
+}
+
+.boton.download-game {
+    background: #462fd2;
+    border-color: #bdbcfc;
+}
+
+.boton.download-game:hover {
+    background: #7060f4;
+    border-color: #bdbcfc;
+}
+
+.boton.playonline {
+    background: #f20a0a;
+    border-color: #fe9494;
+}
+
+.boton.playonline:hover {
+    background: #f20a0a;
+    border-color: #fe9494;
+}
+
+.boton.download {
+    background: #c70af2;
+    border-color: #fe94ee;
+}
+
+.boton.download:hover {
+    background: #c70af2;
+    border-color: #fe94ee;
+}
+
+.boton .fuente-destacada {
+    font-family: "Revue";
+    font-size: var(--text-size-button-title);
+    font-weight: 400;
+    line-height: 1;
+    background: linear-gradient(180deg, #f7903a, #f7f183, #f7903a);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+/* ---- Menu Principal ---- */
+
+.menu-seccion {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    gap: 2dvw;
+    align-items: center;
+}
+
+.menu-seccion .menu-contenedor {
+    width: 100%;
+    max-width: 73.8461em;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.menu-seccion .menu-contenedor nav {
+    background: #000;
+    border-style: solid;
+    border-image: url(../img/border_menu.png);
+    border-image-slice: 40;
+    border-image-width: 14;
+    border-image-outset: 0;
+    border-image-repeat: round;
+    position: relative;
+}
+
+.menu-seccion .menu-contenedor nav ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding: clamp(7px, 0.78125dvw, 21px);
+    gap: clamp(7px, 0.78125dvw, 21px);
+}
+
+.menu-seccion .menu-contenedor nav ul li {
+    font-family: 'Denjin-Makai';
+    padding: 2dvh 0dvw;
+    margin-bottom: 0;
+}
+
+.menu-seccion .menu-contenedor nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: var(--text-size-menu);
+    text-transform: uppercase;
+}
+
+.menu-seccion .menu-contenedor nav ul li a:hover,
+.menu-seccion .menu-contenedor nav ul li a.active {
+    color: #FFE100;
+}
+
+/* ---- 0 ---- */
+
+/* ---- Copyright Footer ---- */
+
+.copyright {
+    text-align: center;
+    margin-top: 1dvh;
+    font-size: var(--text-size-credits);
+}
+
+.copyright p {
+    margin: 0;
+}
+
+.copyright a {
+    font-weight: 700;
+}
+
+/* ---- 0 ---- */
+
+/* ---- News Section ---- */
+
+.noticias-seccion {
+    align-self: flex-start;
+}
+
+.noticias-seccion .noticias-caja {
+    position: absolute;
+    width: 18.24dvw;
+    border-style: solid;
+    border-width: 0.0651099dvw;
+    padding: 0.15dvw;
+    background-color: #521029;
+    border-bottom: 0px none;
+    padding-bottom: 0px;
+    margin-left: 1.53846em;
+    top: -9.5dvh;
+}
+
+.noticias-seccion .noticias-caja .noticias-titulo {
+    background: #947b00;
+    margin: 0px;
+    border: outset 0.1302dvw #d6b500;
+    position: absolute;
+    z-index: 11;
+    top: -1.633dvh;
+    left: 0.823dvw;
+    padding-bottom: 0px;
+    padding-left: 0.326dvw;
+    padding-right: 0.326dvw;
+    padding-top: 0.136dvh;
+    font-size: var(--text-size-news);
+    letter-spacing: 0.0651dvw;
+}
+
+.noticias-seccion .noticias-caja .scrollbar {
+    height: 9.25dvh;
+    width: 100%;
+    background: #000;
+    overflow-y: scroll;
+}
+
+.noticias-seccion .noticias-caja .scrollbar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(64, 45, 45, 0.3);
+    border-radius: 4px;
+}
+
+.noticias-seccion .noticias-caja .scrollbar::-webkit-scrollbar {
+    width: 0.5208336dvw;
+    background-color: #666;
+}
+
+.noticias-seccion .noticias-caja .scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 0.2604dvw;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #F5F5F5;
+}
+
+.noticias-seccion .noticias-caja .noticias-lista {
+    margin-top: 1.7dvh;
+    margin-bottom: 1dvh;
+    padding-left: 0.651044dvw;
+    padding-right: 0.651044dvw;
+}
+
+.noticias-seccion .noticias-caja .noticias-lista li {
+    display: block;
+    border-bottom: 0.1361dvh dashed #ccc;
+    padding-top: 1.3605dvh;
+    padding-bottom: 1.3605dvh;
+}
+
+.noticias-seccion .noticias-caja .noticias-lista li:first-child {
+    padding-top: 0;
+}
+
+.noticias-seccion .noticias-caja .noticias-lista li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+/* ---- 0 ---- */
+
+/* --------------- */
+/* ---- Index ---- */
+/* --------------- */
+
+.contenedor-index {
+    position: relative;
+    display: flex;
+    gap: 2em;
+    width: 100%;
+}
+
+.contenedor-index .columna-medios {
+    justify-content: flex-end;
+    flex-direction: column;
+    display: flex;
+    gap: 2.0816dvh;
+    align-items: flex-end;
+    z-index: 10;
+}
+
+.contenedor-index .columna-personajes {
+    background: url(../img/trio-beat-em-up-openbor-indie-game.gif) center top no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: clamp(35.539em, 58.271dvw - 15.47rem, 40.539em);
+    max-width: 39.231em;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+/* ---- 0 ---- */
+
+/* ---- Trailer ---- */
+
+.trailer-principal a {
+    position: relative;
+    width: 34.616em;
+    height: 19.693em;
+    display: block;
+    background: url(../img/video-beat-em-up-openbor-indie-game.png) center no-repeat;
+    background-size: contain;
+    border: 0;
+}
+
+.trailer-principal a:hover {
+    background: url(../img/video-beat-em-up-openbor-indie-game.png) center no-repeat;
+    background-size: contain;
+}
+
+/* ---- 0 ---- */
+
+/* ---- PopUp ---- */
+
+.text-box-neon {
+    display: flex;
+    background: #000;
+    border-style: solid;
+    border-image: url(../img/border_menu.png);
+    border-image-slice: 40;
+    border-image-width: 14;
+    border-image-outset: 0;
+    border-image-repeat: round;
+    position: relative;
+    z-index: 0;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: clamp(7px, 0.78125dvw, 21px);
+    gap: clamp(7px, 0.78125dvw, 21px);
+}
+
+.disabled.gprev,
+.disabled.gnext {
+    display: none !important;
+}
+
+.gslide-inline .ginlined-content {
+    padding: 2.7210884353741496dvh 1.3020833333333333dvw !important;
+}
+
+.popup-playonline .gslide-inline.gslide-media {
+    max-width: 80dvw;
+}
+
+.popup-download .gslide-media.gslide-inline {
+    max-width: 40dvw;
+    max-height: fit-content;
+}
+
+#descargar-juego .lista-botones {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* ---- 0 ---- */
+
+/* ---- Créditos ---- */
+
+.popup-credits .gslide-inline.gslide-media {
+    max-width: 80dvw;
+}
+
+.creditos-contenido {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    row-gap: 2vh;
+}
+
+.creditos-contenido .lista-creditos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2dvw;
+    grid-row-gap: 1dvh;
+}
+
+.creditos-contenido ul {
+    padding-left: 1.042dvw;
+    margin-bottom: 1.6dvh;
+    margin-top: 0.8dvh;
+}
+
+.creditos-contenido ul li {
+    margin-bottom: 0.8dvh;
+}
+
+/* ---- 0 ---- */
+
+/* ---- General Contenido ---- */
+
+.titulo-seccion {
+    font-family: "Revue";
+    font-size: var(--text-size-title);
+    font-weight: 400;
+    line-height: 1;
+    background: linear-gradient(180deg, #f7903a, #f7f183, #f7903a);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    padding-bottom: 0.8dvh;
+}
+
+/* ---- Internas ---- */
+
+.borde-interna{
+    position: relative;
+    display: flex;
+    gap: 2em;
+    width: 100%;
+    max-width: 63.8461em;
+    margin: 0 auto;
+    background: url(../img/loading-fondo.png) center center no-repeat;
+    background-size: cover;
+    border-style: solid;
+    border-image: url(../img/border_menu1.png);
+    border-image-slice: 60;
+    border-image-width: 10;
+    border-image-outset: 4 2;
+    border-image-repeat: round;
+    border-bottom: 0;
+    padding: 1em;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.fondo-contenido {
+    background-color: #000000a6;
+    padding: 1em;
+    height: 100%;
+    max-height: 100%;
+    width: 100%;
+}
+
+.columnas-contenido {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2em;
+    justify-content: space-between;
+}
+
+.contenedor-interna {
+    height: clamp(35.539em, 58.271dvw - 15.47rem, 40.539em);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+/* ---- 0 ---- */
+
+/* ---- Historia ---- */
+
+.seccion-historia .col1 {
+    width: 60%;
+}
+.seccion-historia .col2 {
+    width: 40%;
+}
+
+/* ---- 0 ---- */
+
+/* ---- Galería ---- */
+
+.galeria-imagenes {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0.3em;
+    grid-row-gap: 0.3em;
+}
+.galeria-imagenes img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    border: 0.1361dvh solid white;
+    box-sizing: border-box;
+}
+/* ---- 0 ---- */
+
+/* ---- Tips ---- */
+
+
+
+/* ---- 0 ---- */
+
+.glightbox-open {
+    height: -webkit-fill-available !important;
+}
+
+.margin-bottom-0 {
+    margin-bottom: 0;
+}

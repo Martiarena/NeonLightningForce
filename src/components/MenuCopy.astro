@@ -1,0 +1,128 @@
+---
+const { internal = false, currentPage } = Astro.props;
+
+import News from "../components/News.astro";
+---
+
+<div class="menu-seccion">
+    <div class="menu-contenedor">
+        {!internal && <News />}
+        <nav>
+            <ul>
+                <li>
+                    <a href="/" class={currentPage === "home" ? "active" : ""}
+                        >Inicio</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="/story"
+                        class={currentPage === "story" ? "active" : ""}
+                        >Historia</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="/characters"
+                        class={currentPage === "characters" ? "active" : ""}
+                        >Personajes</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="/gallery"
+                        class={currentPage === "gallery" ? "active" : ""}
+                        >Screenshots</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="/tips"
+                        class={currentPage === "tips" ? "active" : ""}>Tips</a
+                    >
+                </li>
+            </ul>
+        </nav>
+        <div class="copyright">
+            <div id="light-html_2">
+                <p>
+                    &copy; True Role Dreams 2016-2026. Algunos derechos
+                    reservados x.x. | <a
+                        class="glightbox-credits"
+                        href="#creditos-recursos">Créditos y recursos</a
+                    >
+                </p>
+                <div
+                    id="creditos-recursos"
+                    class="text-box-neon"
+                    style="display:none;"
+                >
+                    <div class="creditos-contenido">
+                        <h2 class="titulo-seccion">Créditos y Recursos</h2>
+                        <p>
+                            Gráficos, música y efectos de sonido pertenecen a
+                            los siguientes juegos listados:
+                        </p>
+                        <div class="lista-creditos">
+                            <div>
+                                <h3 class="subtitulo-creditos">Gráficos</h3>
+                                <p>
+                                    De spriters-resource.com &
+                                    spritedatabase.net:
+                                </p>
+                                <ul>
+                                    <li>Final Fight 1 & 2</li>
+                                    <li>Street of Rage 2</li>
+                                    <li>Pretty Soldier Sailor Moon</li>
+                                    <li>Karnov's Revenge</li>
+                                    <li>Double Dragon</li>
+                                    <li>Savage Reign</li>
+                                    <li>Fight Fever</li>
+                                    <li>Guardians</li>
+                                    <li>Street Fighter 2</li>
+                                    <li>Ghost Chaser Densei</li>
+                                    <li>Cadillacs & Dinosaurs</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="subtitulo-creditos">Música</h3>
+                                <ul>
+                                    <li>Ryo ga Gotoku</li>
+                                    <li>Ryo ga Gotoku 2</li>
+                                    <li>Ryo ga Gotoku 3</li>
+                                    <li>Ryo ga Gotoku 4</li>
+                                    <li>Ryo ga Gotoku 5</li>
+                                    <li>King of Fighters</li>
+                                    <li>Crisis Beat</li>
+                                    <li>Bakuretsu Tenshi</li>
+                                    <li>The Bouncer</li>
+                                    <li>Crimson Tears</li>
+                                </ul>
+                                <h3 class="subtitulo-creditos">Tema de Cierre</h3>
+                                <p>
+                                    [BLOODY MOON] (por Gospel of Judas)
+                                </p>
+                            </div>
+                            <div>
+                                <h3 class="subtitulo-creditos">
+                                    Efectos de sonido
+                                </h3>
+                                <ul>
+                                    <li>Final Fight</li>
+                                    <li>Street of Rage 2</li>
+                                    <li>Guardians</li>
+                                    <li>Denjin Makai</li>
+                                    <li>Ghost Chaser Densei</li>
+                                    <li>Crimson Tears</li>
+                                    <li>Cadillacs & Dinosaurs</li>
+                                </ul>
+                                <h3 class="subtitulo-creditos">Motor Usado</h3>
+                                <p>Beats of Rage (OpenBOR)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

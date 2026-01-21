@@ -1,0 +1,57 @@
+---
+const {
+  title = "Neon Lightning Force",
+  description = "Neon Lightning Force es un beat'em up arcade retrofuturista desarrollado por True Role Dreams. Sitio web oficial con historia, personajes y descargas.",
+  pageType = "home",
+  currentPage = 'home'
+} = Astro.props;
+
+import Background from '../components/Background.astro';
+import MenuCopy from '../components/MenuCopy.astro';
+---
+
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="index, follow">
+	<title>{title}</title>
+	<meta property="og:type" content="website">
+	<meta property="og:title" content={title}>
+	<meta property="og:description" content={description}>
+	<meta property="og:image" content="/img/og-neon-lightning-force.jpg">
+	<meta property="og:url" content="https://neonlightningforce.trueroledreams.org">
+
+	<link rel="stylesheet" href="/style/normalize.css" />
+	<link rel="stylesheet" href="/style/estilo.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+	{currentPage === "characters" && (
+    <link rel="stylesheet" href="/style/characters-tabs.css">
+  	)}
+</head>
+<body class={pageType}>
+    <Background />
+	<div class="main-wrapper">
+		<div class="body-website">
+			<a href="/" class="logo-neonlightningforce"></a>
+			<div id="contenedor" class={pageType === 'internal' ? 'internas' : ''}>
+                <slot />
+				<MenuCopy currentPage={currentPage} internal={pageType === 'internal'}/>
+			</div>
+		</div>
+		
+		<script is:inline src="/scripts/script.js"></script>
+		
+		{currentPage === "characters" && (
+		<script is:inline src="/scripts/tabs.js"></script>
+		)}
+		{currentPage === "home" && (
+		<script is:inline src="/scripts/home.js"></script>
+		)}
+		{currentPage === "gallery" && (
+		<script is:inline src="/scripts/gallery.js"></script>
+		)}
+		<script is:inline src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+	</div>
+</body>
+</html>

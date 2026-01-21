@@ -1,0 +1,282 @@
+.tabs-personajes {
+    flex-direction: row;
+    display: flex;
+    gap: 1em;
+    height: 100%;
+    box-sizing: border-box;
+    max-height: 26.5em;
+}
+
+/* ---- Tabs Header ---- */
+
+.tabs-personajes .tabs-header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 0.5em;
+    grid-row-gap: 0.1em;
+    width: 3.5em;
+}
+
+.tabs-personajes .tabs-header button {
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    border: 0.307692dvh solid white;
+    height: auto;
+}
+
+.tabs-personajes .tabs-header button img {
+    display: block;
+    width: 100%;
+}
+
+.tabs-personajes .tabs-header .tab {
+    cursor: pointer;
+    opacity: 0.6;
+    width: 2.73dvw;
+    cursor: pointer;
+}
+
+.tabs-personajes .tabs-header .tab.activo {
+    opacity: 1;
+}
+
+/* ---- 0 ---- */
+
+/* ---- Tabs Contenido ---- */
+
+.tabs-personajes .tabs-content {
+    max-width: 70em;
+    width: 100%;
+    background: black;
+    padding: 1.15em;
+    box-sizing: border-box;
+    border: 0.25em double white;
+}
+
+.tabs-personajes .tabs-content .tab-personajes-panel {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.tabs-personajes .tabs-content .tab-personajes-panel.activo {
+    display: block;
+    opacity: 1;
+}
+
+.tabs-personajes .tabs-content .tab-personajes-panel ul li {
+    list-style: none;
+    margin-bottom: 0.5em;
+    font-size: 1.1em;
+}
+
+.tabs-personajes .tabs-content .tab-personajes-panel ul {
+    padding-left: 0;
+}
+
+.tabs-personajes .tabs-content .tab-personajes-panel h2 {
+    margin-bottom: 0.5em;
+    font-family: 'Denjin-Makai';
+    text-transform: uppercase;
+    font-size: 1.5em;
+    line-height: 1.4;
+}
+
+.tabs-personajes .tabs-content .tab-personajes-panel#isolda {
+    background: url(../img/isolda-shinawara-sprite.gif) right bottom no-repeat;
+    height: 100%;
+}
+
+.tabs-personajes .tabs-content .tab-personajes-panel#steven {
+    background: url(../img/steven-wolfgang-sprite.gif) right bottom no-repeat;
+    height: 100%;
+}
+
+.tabs-personajes .tabs-content .tab-personajes-panel#negishi {
+    background: url(../img/dr-roderick-negishi-sprite.gif) right bottom no-repeat;
+    height: 100%;
+}
+
+.tabs-personajes .tabs-content .tab-personajes-panel#melania {
+    background: url(../img/melania-shinawara-sprite.gif) right bottom no-repeat;
+    height: 100%;
+}
+
+.tabs-personajes .tabs-content .tab-personajes-panel#atlas {
+    background: url(../img/project-atlas-sprite.gif) right bottom no-repeat;
+    height: 100%;
+}
+
+.tabs-personajes .tabs-content .tab-personajes-panel#mikhail {
+    background: url(../img/mikhail-shenkman-sprite.png) 92% bottom no-repeat;
+    height: 100%;
+}
+
+.tabs-personajes .tabs-content .tab-personajes-panel#thundervolt {
+    background: url(../img/thundervolt-sprite.gif) 95% 50% no-repeat;
+    height: 100%;
+}
+
+.tabs-personajes .tabs-content .tab-personajes-panel#vixor {
+    background: url(../img/vixor-kramer-sprite.png) 95% bottom no-repeat;
+    height: 100%;
+}
+
+.tabs-personajes .tabs-content .tab-personajes-panel .titulo-isolda {
+    color: #00a0b4;
+    background: #00a0b4;
+    background: -webkit-linear-gradient(top, #00a0b4, #00dce6, #00a0b4);
+    background: linear-gradient(top, #00a0b4, #00dce6, #00a0b4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tabs-personajes .tabs-content .tab-personajes-panel .titulo-steven {
+    color: #c64200;
+    background: #c64200;
+    background: -webkit-linear-gradient(top, #c64200, #ffff00, #c64200);
+    background: linear-gradient(top, #c64200, #ffff00, #c64200);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tabs-personajes .tabs-content .tab-personajes-panel .titulo-negishi {
+    color: #8c9650;
+    background: #8c9650;
+    background: -webkit-linear-gradient(top, #8c9650, #c8dc8c, #8c9650);
+    background: linear-gradient(top, #8c9650, #c8dc8c, #8c9650);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tabs-personajes .tabs-content .tab-personajes-panel .titulo-melania {
+    color: #b9255b;
+    background: #b9255b;
+    background: -webkit-linear-gradient(top, #b9255b, #eda6d0, #b9255b);
+    background: linear-gradient(top, #b9255b, #eda6d0, #b9255b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tabs-personajes .tabs-content .tab-personajes-panel .titulo-atlas {
+    color: #395a4e;
+    background: #395a4e;
+    background: -webkit-linear-gradient(top, #395a4e, #adc9c4, #395a4e);
+    background: linear-gradient(top, #395a4e, #adc9c4, #395a4e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tabs-personajes .tabs-content .tab-personajes-panel .titulo-thundervolt {
+    color: #ac902d;
+    background: #ac902d;
+    background: -webkit-linear-gradient(top, #ac902d, #feee99, #ac902d);
+    background: linear-gradient(top, #ac902d, #feee99, #ac902d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tabs-personajes .tabs-content .tab-personajes-panel .titulo-mikhail {
+    color: #9c9c9c;
+    background: #9c9c9c;
+    background: -webkit-linear-gradient(top, #9c9c9c, #dedede, #9c9c9c);
+    background: linear-gradient(top, #9c9c9c, #dedede, #9c9c9c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tabs-personajes .tabs-content .tab-personajes-panel .titulo-vixor {
+    color: #62628B;
+    background: #62628B;
+    background: -webkit-linear-gradient(top, #62628B, #C7C7F8, #62628B);
+    background: linear-gradient(top, #62628B, #C7C7F8, #62628B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tabs-personajes .tabs-content .tab-personajes-panel .descripcion-personaje {
+    display: flex;
+    flex-direction: column;
+    max-width: 32em;
+}
+
+/* ---- 0 ---- */
+
+/*
+@media (max-width: 1024px) {
+    .tabs .tabs-header button img {
+        width: 2.24dvw;
+    }
+}
+
+@media (orientation: portrait) {
+    .tabs {
+        flex-direction: column;
+        max-height: fit-content;
+    }
+    .tabs-content {
+        max-width: 100%;
+    }
+    .tabs .tabs-header {
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        max-height: fit-content;
+        width: 100%;
+    }
+    .descripcion-personaje {
+        padding-bottom: 43.5em;
+        max-width: 100%;
+    }
+    .tab-panel h2 {
+        font-size: 3.5em;
+        margin-bottom: 1em;
+    }
+    .tab-panel ul li {
+        font-size: 3em;
+    }
+    .tabs-content {
+        padding: 3em;
+        border: 0.75em double white;
+    }
+    .perfil-personajes {
+        max-height: 46.202em;
+    }
+    #isolda {
+        background-size: 50%;
+        background-position: 25% 100%;
+    }
+    #steven {
+        background-size: 50%;
+        background-position: 50% 100%;
+    }
+    #melania {
+        background-size: 18%;
+        background-position: 50% 100%;
+    }
+    #mikhail {
+        background-size: 16%;
+        background-position: 50% 100%;
+    }
+    #vixor {
+        background-size: 20%;
+        background-position: 50% 100%;
+    }
+    .titulo-seccion {
+        text-align: center;
+        font-size: 7em;
+        margin-bottom: 0.4em;
+    }
+    .tab-panel ul {
+        display: grid;
+        grid-template-columns: 0.75fr 1.25fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    .contenedor-interna p {
+        text-align: justify;
+    }
+}*/

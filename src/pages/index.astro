@@ -1,0 +1,46 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<MainLayout
+	currentPage="home"
+	title="Neon Lightning Force - Beat'em up arcade"
+	description="Neon Lightning Force es un beat'em up arcade retrofuturista desarrollado por True Role Dreams. Sitio web oficial con historia, personajes y descargas."
+>
+	<section class="contenedor-index">
+		<div class="columna-personajes"></div>
+		<div class="columna-medios">
+			<div class="trailer-principal" id="light-galeria-video">
+				<a
+					class="glightbox-video gallery-video"
+					href="https://youtu.be/nHBa5KBhNx4"></a>
+			</div>
+			<a
+				href="#descargar-juego"
+				class="glightbox-download boton download"
+				data-type="inline"
+				data-popup="descargar"
+				><span class="fuente-destacada">Descargar</span></a
+			>
+			<div
+				id="descargar-juego"
+				class="text-box-neon"
+				style="display:none;"
+			>
+				<h2 class="titulo-seccion">Descargar</h2>
+				<div class="lista-botones">
+					<a
+						class="boton download-game"
+						href="https://www.mediafire.com/file/1k42tm0y8qaveqh/Neon_Lightning_Force_1.5_demo.zip/file"
+						target="_blank">Versión 1.5 (Beta)</a
+					>
+					<!-- <a class="boton download-game margin-bottom-0" href="">APK para emulador de android</a> -->
+				</div>
+			</div>
+			<!-- <a href="#jugar-online" class="glightbox-playonline boton playonline" data-type="inline">Demo Online</a>
+			<div id="jugar-online" class="text-box-neon" style="display:none;">
+				<p>Jugar Online asasas</p>
+			</div> -->
+		</div>
+	</section>
+</MainLayout>
